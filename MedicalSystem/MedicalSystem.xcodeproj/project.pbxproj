@@ -1,0 +1,943 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200A65D71AC04CE2007E8A56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A65D61AC04CE2007E8A56 /* main.m */; };
+		200A65DA1AC04CE2007E8A56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A65D91AC04CE2007E8A56 /* AppDelegate.m */; };
+		200A65E01AC04CE2007E8A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200A65DE1AC04CE2007E8A56 /* Main.storyboard */; };
+		200A65E21AC04CE2007E8A56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200A65E11AC04CE2007E8A56 /* Images.xcassets */; };
+		200A65E51AC04CE2007E8A56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200A65E31AC04CE2007E8A56 /* LaunchScreen.xib */; };
+		200A65F11AC04CE2007E8A56 /* MedicalSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A65F01AC04CE2007E8A56 /* MedicalSystemTests.m */; };
+		200A65FC1AC04D69007E8A56 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A65FB1AC04D69007E8A56 /* MainViewController.m */; };
+		200A660A1AC05187007E8A56 /* NewPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A66091AC05187007E8A56 /* NewPatientViewController.m */; };
+		200A660D1AC05197007E8A56 /* PatientOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A660C1AC05197007E8A56 /* PatientOutViewController.m */; };
+		200A66131AC051BB007E8A56 /* PatientCostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A66121AC051BB007E8A56 /* PatientCostViewController.m */; };
+		200A66161AC051CD007E8A56 /* PatientStateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A66151AC051CD007E8A56 /* PatientStateViewController.m */; };
+		200A66191AC051DE007E8A56 /* SystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A66181AC051DE007E8A56 /* SystemViewController.m */; };
+		2047EF621AC129FC005D91B3 /* tabbar_mainbtn_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2047EF601AC129FC005D91B3 /* tabbar_mainbtn_bg.png */; };
+		2047EF631AC129FC005D91B3 /* tabbar_mainbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2047EF611AC129FC005D91B3 /* tabbar_mainbtn.png */; };
+		2047EF661AC12D0E005D91B3 /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047EF651AC12D0E005D91B3 /* NavigationBar.m */; };
+		2047EF681AC132C9005D91B3 /* nav_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2047EF671AC132C9005D91B3 /* nav_bg.png */; };
+		2047EF6A1AC139F8005D91B3 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 2047EF691AC139F8005D91B3 /* 0.png */; };
+		2047EF6E1AC1901F005D91B3 /* TotalPatientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047EF6D1AC1901F005D91B3 /* TotalPatientViewController.m */; };
+		2047EF711AC193C0005D91B3 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047EF701AC193C0005D91B3 /* Patient.m */; };
+		2047EF741AC196EE005D91B3 /* PatientDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047EF731AC196EE005D91B3 /* PatientDB.m */; };
+		2047EF761AC19777005D91B3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047EF751AC19777005D91B3 /* libsqlite3.dylib */; };
+		2047EF781AC19DFB005D91B3 /* MedicalSystem.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 2047EF771AC19DFB005D91B3 /* MedicalSystem.sqlite */; };
+		2047EF7A1AC19FA6005D91B3 /* navigationbar_back_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 2047EF791AC19FA6005D91B3 /* navigationbar_back_highlighted.png */; };
+		204838651AC69A130081F735 /* tarbar_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 204838631AC69A130081F735 /* tarbar_add.png */; };
+		2048386E1AC6AE8F0081F735 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 204838671AC6AE8F0081F735 /* bg1.png */; };
+		2048386F1AC6AE8F0081F735 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 204838681AC6AE8F0081F735 /* bg2.png */; };
+		204838701AC6AE8F0081F735 /* bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 204838691AC6AE8F0081F735 /* bg3.png */; };
+		204838711AC6AE8F0081F735 /* bg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2048386A1AC6AE8F0081F735 /* bg4.png */; };
+		204838721AC6AE8F0081F735 /* bg5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2048386B1AC6AE8F0081F735 /* bg5.png */; };
+		204838731AC6AE8F0081F735 /* bg6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2048386C1AC6AE8F0081F735 /* bg6.png */; };
+		204838741AC6AE8F0081F735 /* bg7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2048386D1AC6AE8F0081F735 /* bg7.png */; };
+		205245511AC581C400B3DB80 /* OutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205245501AC581C400B3DB80 /* OutViewController.m */; };
+		205245541AC5874600B3DB80 /* DetailStateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205245531AC5874600B3DB80 /* DetailStateViewController.m */; };
+		205245571AC589BF00B3DB80 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = 205245561AC589BF00B3DB80 /* State.m */; };
+		2052455A1AC58B2100B3DB80 /* StateDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 205245591AC58B2100B3DB80 /* StateDB.m */; };
+		2052455D1AC5947300B3DB80 /* MedCostDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2052455C1AC5947300B3DB80 /* MedCostDB.m */; };
+		205245601AC5948B00B3DB80 /* PatientCostDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2052455F1AC5948B00B3DB80 /* PatientCostDB.m */; };
+		205CCC371AFC546600DD752B /* yiliao.png in Resources */ = {isa = PBXBuildFile; fileRef = 205CCC361AFC546600DD752B /* yiliao.png */; };
+		205DFD6B1AC4E7D600D40E1A /* TotalCostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205DFD6A1AC4E7D600D40E1A /* TotalCostViewController.m */; };
+		205DFD6E1AC5053400D40E1A /* PatientCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 205DFD6D1AC5053400D40E1A /* PatientCostModel.m */; };
+		205DFD711AC5054E00D40E1A /* MedCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 205DFD701AC5054E00D40E1A /* MedCostModel.m */; };
+		205E81281ACCDF4400F8C24C /* weidenglu.png in Resources */ = {isa = PBXBuildFile; fileRef = 205E81271ACCDF4400F8C24C /* weidenglu.png */; };
+		2062EE1A1AC3DAD700889EBA /* MedModelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2062EE191AC3DAD700889EBA /* MedModelView.m */; };
+		20642B221ACBD35C00A8C651 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20642B211ACBD35C00A8C651 /* RegisterViewController.m */; };
+		20642B271ACBDB4600A8C651 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 20642B261ACBDB4600A8C651 /* logo1.png */; };
+		20642B2B1ACC095A00A8C651 /* ZhuceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20642B2A1ACC095A00A8C651 /* ZhuceViewController.m */; };
+		20642B2E1ACC1CFA00A8C651 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20642B2D1ACC1CFA00A8C651 /* UserModel.m */; };
+		20642B311ACC1D1500A8C651 /* FellowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20642B301ACC1D1500A8C651 /* FellowModel.m */; };
+		20642B341ACC1EB900A8C651 /* UserDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 20642B331ACC1EB900A8C651 /* UserDB.m */; };
+		20642B371ACC1EC700A8C651 /* FellowDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 20642B361ACC1EC700A8C651 /* FellowDB.m */; };
+		20642B3A1ACC265900A8C651 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20642B391ACC265900A8C651 /* AboutViewController.m */; };
+		20642B3D1ACC266B00A8C651 /* FellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20642B3C1ACC266B00A8C651 /* FellowViewController.m */; };
+		20665DC31AC2563100395686 /* radio_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 20665DBF1AC2563100395686 /* radio_checked.png */; };
+		20665DC41AC2563100395686 /* radio_checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20665DC01AC2563100395686 /* radio_checked@2x.png */; };
+		20665DC51AC2563100395686 /* radio_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 20665DC11AC2563100395686 /* radio_unchecked.png */; };
+		20665DC61AC2563100395686 /* radio_unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20665DC21AC2563100395686 /* radio_unchecked@2x.png */; };
+		20665DC91AC2563D00395686 /* QRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20665DC81AC2563D00395686 /* QRadioButton.m */; };
+		208BFE331AC1044C008E72DC /* tabbar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE271AC1044C008E72DC /* tabbar_background.png */; };
+		208BFE341AC1044C008E72DC /* tabbar_discover_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE281AC1044C008E72DC /* tabbar_discover_highlighted.png */; };
+		208BFE351AC1044C008E72DC /* tabbar_discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE291AC1044C008E72DC /* tabbar_discover.png */; };
+		208BFE361AC1044C008E72DC /* tabbar_home_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE2A1AC1044C008E72DC /* tabbar_home_highlighted.png */; };
+		208BFE371AC1044C008E72DC /* tabbar_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE2B1AC1044C008E72DC /* tabbar_home.png */; };
+		208BFE381AC1044C008E72DC /* tabbar_message_center_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE2C1AC1044C008E72DC /* tabbar_message_center_highlighted.png */; };
+		208BFE391AC1044C008E72DC /* tabbar_message_center.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE2D1AC1044C008E72DC /* tabbar_message_center.png */; };
+		208BFE3A1AC1044C008E72DC /* tabbar_more_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE2E1AC1044C008E72DC /* tabbar_more_highlighted.png */; };
+		208BFE3B1AC1044C008E72DC /* tabbar_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE2F1AC1044C008E72DC /* tabbar_more.png */; };
+		208BFE3C1AC1044C008E72DC /* tabbar_profile_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE301AC1044C008E72DC /* tabbar_profile_highlighted.png */; };
+		208BFE3D1AC1044C008E72DC /* tabbar_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE311AC1044C008E72DC /* tabbar_profile.png */; };
+		208BFE3E1AC1044C008E72DC /* tabbar_slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 208BFE321AC1044C008E72DC /* tabbar_slider.png */; };
+		2096C9231ACA67C7007B8170 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 2096C9221ACA67C7007B8170 /* delete.png */; };
+		2096C9261ACA6C85007B8170 /* MedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2096C9251ACA6C85007B8170 /* MedButton.m */; };
+		2096C9291ACABB4B007B8170 /* MedTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 2096C9281ACABB4B007B8170 /* MedTextFiled.m */; };
+		20C897041AC268C9001F65F5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C896F91AC268C9001F65F5 /* FMDatabase.m */; };
+		20C897051AC268C9001F65F5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C896FB1AC268C9001F65F5 /* FMDatabaseAdditions.m */; };
+		20C897061AC268C9001F65F5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C896FD1AC268C9001F65F5 /* FMDatabasePool.m */; };
+		20C897071AC268C9001F65F5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C896FF1AC268C9001F65F5 /* FMDatabaseQueue.m */; };
+		20C897081AC268C9001F65F5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C897011AC268C9001F65F5 /* FMResultSet.m */; };
+		20C8971A1AC2D4B1001F65F5 /* MedDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C897191AC2D4B1001F65F5 /* MedDB.m */; };
+		20C8971D1AC2D9D4001F65F5 /* MedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C8971C1AC2D9D4001F65F5 /* MedModel.m */; };
+		20C8971F1AC2DAD5001F65F5 /* PatientMedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C8971E1AC2DAD5001F65F5 /* PatientMedViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		200A65EB1AC04CE2007E8A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 200A65C91AC04CE2007E8A56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 200A65D01AC04CE2007E8A56;
+			remoteInfo = MedicalSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		200A65D11AC04CE2007E8A56 /* MedicalSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200A65D51AC04CE2007E8A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200A65D61AC04CE2007E8A56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		200A65D81AC04CE2007E8A56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		200A65D91AC04CE2007E8A56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		200A65DF1AC04CE2007E8A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		200A65E11AC04CE2007E8A56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		200A65E41AC04CE2007E8A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		200A65EA1AC04CE2007E8A56 /* MedicalSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicalSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		200A65EF1AC04CE2007E8A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200A65F01AC04CE2007E8A56 /* MedicalSystemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicalSystemTests.m; sourceTree = "<group>"; };
+		200A65FA1AC04D69007E8A56 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		200A65FB1AC04D69007E8A56 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		200A66081AC05187007E8A56 /* NewPatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPatientViewController.h; sourceTree = "<group>"; };
+		200A66091AC05187007E8A56 /* NewPatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPatientViewController.m; sourceTree = "<group>"; };
+		200A660B1AC05197007E8A56 /* PatientOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientOutViewController.h; sourceTree = "<group>"; };
+		200A660C1AC05197007E8A56 /* PatientOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientOutViewController.m; sourceTree = "<group>"; };
+		200A660E1AC051AC007E8A56 /* PatientMedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientMedViewController.h; sourceTree = "<group>"; };
+		200A66111AC051BB007E8A56 /* PatientCostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientCostViewController.h; sourceTree = "<group>"; };
+		200A66121AC051BB007E8A56 /* PatientCostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientCostViewController.m; sourceTree = "<group>"; };
+		200A66141AC051CD007E8A56 /* PatientStateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientStateViewController.h; sourceTree = "<group>"; };
+		200A66151AC051CD007E8A56 /* PatientStateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientStateViewController.m; sourceTree = "<group>"; };
+		200A66171AC051DE007E8A56 /* SystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemViewController.h; sourceTree = "<group>"; };
+		200A66181AC051DE007E8A56 /* SystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemViewController.m; sourceTree = "<group>"; };
+		2047EF601AC129FC005D91B3 /* tabbar_mainbtn_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_mainbtn_bg.png; path = UIImage/tabbarImage/tabbar_mainbtn_bg.png; sourceTree = "<group>"; };
+		2047EF611AC129FC005D91B3 /* tabbar_mainbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_mainbtn.png; path = UIImage/tabbarImage/tabbar_mainbtn.png; sourceTree = "<group>"; };
+		2047EF641AC12D0E005D91B3 /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
+		2047EF651AC12D0E005D91B3 /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
+		2047EF671AC132C9005D91B3 /* nav_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nav_bg.png; path = UIImage/tabbarImage/nav_bg.png; sourceTree = "<group>"; };
+		2047EF691AC139F8005D91B3 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 0.png; path = UIImage/0.png; sourceTree = "<group>"; };
+		2047EF6B1AC1455D005D91B3 /* MedicalPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedicalPrefix.pch; sourceTree = "<group>"; };
+		2047EF6C1AC1901F005D91B3 /* TotalPatientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalPatientViewController.h; sourceTree = "<group>"; };
+		2047EF6D1AC1901F005D91B3 /* TotalPatientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalPatientViewController.m; sourceTree = "<group>"; };
+		2047EF6F1AC193C0005D91B3 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		2047EF701AC193C0005D91B3 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		2047EF721AC196EE005D91B3 /* PatientDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientDB.h; sourceTree = "<group>"; };
+		2047EF731AC196EE005D91B3 /* PatientDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientDB.m; sourceTree = "<group>"; };
+		2047EF751AC19777005D91B3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2047EF771AC19DFB005D91B3 /* MedicalSystem.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MedicalSystem.sqlite; sourceTree = "<group>"; };
+		2047EF791AC19FA6005D91B3 /* navigationbar_back_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navigationbar_back_highlighted.png; path = UIImage/navigationbar_back_highlighted.png; sourceTree = "<group>"; };
+		204838631AC69A130081F735 /* tarbar_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarbar_add.png; sourceTree = "<group>"; };
+		204838671AC6AE8F0081F735 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg1.png; path = UIImage/bg/bg1.png; sourceTree = "<group>"; };
+		204838681AC6AE8F0081F735 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg2.png; path = UIImage/bg/bg2.png; sourceTree = "<group>"; };
+		204838691AC6AE8F0081F735 /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg3.png; path = UIImage/bg/bg3.png; sourceTree = "<group>"; };
+		2048386A1AC6AE8F0081F735 /* bg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg4.png; path = UIImage/bg/bg4.png; sourceTree = "<group>"; };
+		2048386B1AC6AE8F0081F735 /* bg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg5.png; path = UIImage/bg/bg5.png; sourceTree = "<group>"; };
+		2048386C1AC6AE8F0081F735 /* bg6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg6.png; path = UIImage/bg/bg6.png; sourceTree = "<group>"; };
+		2048386D1AC6AE8F0081F735 /* bg7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg7.png; path = UIImage/bg/bg7.png; sourceTree = "<group>"; };
+		2052454F1AC581C400B3DB80 /* OutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutViewController.h; sourceTree = "<group>"; };
+		205245501AC581C400B3DB80 /* OutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutViewController.m; sourceTree = "<group>"; };
+		205245521AC5874600B3DB80 /* DetailStateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailStateViewController.h; sourceTree = "<group>"; };
+		205245531AC5874600B3DB80 /* DetailStateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailStateViewController.m; sourceTree = "<group>"; };
+		205245551AC589BF00B3DB80 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		205245561AC589BF00B3DB80 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		205245581AC58B2100B3DB80 /* StateDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateDB.h; sourceTree = "<group>"; };
+		205245591AC58B2100B3DB80 /* StateDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateDB.m; sourceTree = "<group>"; };
+		2052455B1AC5947300B3DB80 /* MedCostDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedCostDB.h; sourceTree = "<group>"; };
+		2052455C1AC5947300B3DB80 /* MedCostDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedCostDB.m; sourceTree = "<group>"; };
+		2052455E1AC5948B00B3DB80 /* PatientCostDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientCostDB.h; sourceTree = "<group>"; };
+		2052455F1AC5948B00B3DB80 /* PatientCostDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientCostDB.m; sourceTree = "<group>"; };
+		205CCC361AFC546600DD752B /* yiliao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yiliao.png; path = UIImage/yiliao.png; sourceTree = "<group>"; };
+		205DFD691AC4E7D600D40E1A /* TotalCostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalCostViewController.h; sourceTree = "<group>"; };
+		205DFD6A1AC4E7D600D40E1A /* TotalCostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalCostViewController.m; sourceTree = "<group>"; };
+		205DFD6C1AC5053400D40E1A /* PatientCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientCostModel.h; sourceTree = "<group>"; };
+		205DFD6D1AC5053400D40E1A /* PatientCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientCostModel.m; sourceTree = "<group>"; };
+		205DFD6F1AC5054E00D40E1A /* MedCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedCostModel.h; sourceTree = "<group>"; };
+		205DFD701AC5054E00D40E1A /* MedCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedCostModel.m; sourceTree = "<group>"; };
+		205E81271ACCDF4400F8C24C /* weidenglu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weidenglu.png; path = UIImage/weidenglu.png; sourceTree = "<group>"; };
+		2062EE181AC3DAD700889EBA /* MedModelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedModelView.h; sourceTree = "<group>"; };
+		2062EE191AC3DAD700889EBA /* MedModelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedModelView.m; sourceTree = "<group>"; };
+		20642B201ACBD35C00A8C651 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		20642B211ACBD35C00A8C651 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		20642B261ACBDB4600A8C651 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = UIImage/logo1.png; sourceTree = "<group>"; };
+		20642B291ACC095A00A8C651 /* ZhuceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuceViewController.h; sourceTree = "<group>"; };
+		20642B2A1ACC095A00A8C651 /* ZhuceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuceViewController.m; sourceTree = "<group>"; };
+		20642B2C1ACC1CFA00A8C651 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		20642B2D1ACC1CFA00A8C651 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		20642B2F1ACC1D1500A8C651 /* FellowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FellowModel.h; sourceTree = "<group>"; };
+		20642B301ACC1D1500A8C651 /* FellowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FellowModel.m; sourceTree = "<group>"; };
+		20642B321ACC1EB900A8C651 /* UserDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDB.h; sourceTree = "<group>"; };
+		20642B331ACC1EB900A8C651 /* UserDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDB.m; sourceTree = "<group>"; };
+		20642B351ACC1EC700A8C651 /* FellowDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FellowDB.h; sourceTree = "<group>"; };
+		20642B361ACC1EC700A8C651 /* FellowDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FellowDB.m; sourceTree = "<group>"; };
+		20642B381ACC265900A8C651 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		20642B391ACC265900A8C651 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		20642B3B1ACC266B00A8C651 /* FellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FellowViewController.h; sourceTree = "<group>"; };
+		20642B3C1ACC266B00A8C651 /* FellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FellowViewController.m; sourceTree = "<group>"; };
+		20665DBF1AC2563100395686 /* radio_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = radio_checked.png; path = QRadioButton/radio_checked.png; sourceTree = "<group>"; };
+		20665DC01AC2563100395686 /* radio_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "radio_checked@2x.png"; path = "QRadioButton/radio_checked@2x.png"; sourceTree = "<group>"; };
+		20665DC11AC2563100395686 /* radio_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = radio_unchecked.png; path = QRadioButton/radio_unchecked.png; sourceTree = "<group>"; };
+		20665DC21AC2563100395686 /* radio_unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "radio_unchecked@2x.png"; path = "QRadioButton/radio_unchecked@2x.png"; sourceTree = "<group>"; };
+		20665DC71AC2563D00395686 /* QRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRadioButton.h; path = QRadioButton/QRadioButton.h; sourceTree = "<group>"; };
+		20665DC81AC2563D00395686 /* QRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRadioButton.m; path = QRadioButton/QRadioButton.m; sourceTree = "<group>"; };
+		208BFE271AC1044C008E72DC /* tabbar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_background.png; path = UIImage/tabbarImage/tabbar_background.png; sourceTree = "<group>"; };
+		208BFE281AC1044C008E72DC /* tabbar_discover_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_discover_highlighted.png; path = UIImage/tabbarImage/tabbar_discover_highlighted.png; sourceTree = "<group>"; };
+		208BFE291AC1044C008E72DC /* tabbar_discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_discover.png; path = UIImage/tabbarImage/tabbar_discover.png; sourceTree = "<group>"; };
+		208BFE2A1AC1044C008E72DC /* tabbar_home_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_home_highlighted.png; path = UIImage/tabbarImage/tabbar_home_highlighted.png; sourceTree = "<group>"; };
+		208BFE2B1AC1044C008E72DC /* tabbar_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_home.png; path = UIImage/tabbarImage/tabbar_home.png; sourceTree = "<group>"; };
+		208BFE2C1AC1044C008E72DC /* tabbar_message_center_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_message_center_highlighted.png; path = UIImage/tabbarImage/tabbar_message_center_highlighted.png; sourceTree = "<group>"; };
+		208BFE2D1AC1044C008E72DC /* tabbar_message_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_message_center.png; path = UIImage/tabbarImage/tabbar_message_center.png; sourceTree = "<group>"; };
+		208BFE2E1AC1044C008E72DC /* tabbar_more_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_more_highlighted.png; path = UIImage/tabbarImage/tabbar_more_highlighted.png; sourceTree = "<group>"; };
+		208BFE2F1AC1044C008E72DC /* tabbar_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_more.png; path = UIImage/tabbarImage/tabbar_more.png; sourceTree = "<group>"; };
+		208BFE301AC1044C008E72DC /* tabbar_profile_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_profile_highlighted.png; path = UIImage/tabbarImage/tabbar_profile_highlighted.png; sourceTree = "<group>"; };
+		208BFE311AC1044C008E72DC /* tabbar_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_profile.png; path = UIImage/tabbarImage/tabbar_profile.png; sourceTree = "<group>"; };
+		208BFE321AC1044C008E72DC /* tabbar_slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_slider.png; path = UIImage/tabbarImage/tabbar_slider.png; sourceTree = "<group>"; };
+		2096C9221ACA67C7007B8170 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = delete.png; path = UIImage/delete.png; sourceTree = "<group>"; };
+		2096C9241ACA6C85007B8170 /* MedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedButton.h; sourceTree = "<group>"; };
+		2096C9251ACA6C85007B8170 /* MedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedButton.m; sourceTree = "<group>"; };
+		2096C9271ACABB4B007B8170 /* MedTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedTextFiled.h; sourceTree = "<group>"; };
+		2096C9281ACABB4B007B8170 /* MedTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedTextFiled.m; sourceTree = "<group>"; };
+		20C896F81AC268C9001F65F5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		20C896F91AC268C9001F65F5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		20C896FA1AC268C9001F65F5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		20C896FB1AC268C9001F65F5 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		20C896FC1AC268C9001F65F5 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		20C896FD1AC268C9001F65F5 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		20C896FE1AC268C9001F65F5 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		20C896FF1AC268C9001F65F5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		20C897001AC268C9001F65F5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		20C897011AC268C9001F65F5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		20C897181AC2D4B1001F65F5 /* MedDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedDB.h; sourceTree = "<group>"; };
+		20C897191AC2D4B1001F65F5 /* MedDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedDB.m; sourceTree = "<group>"; };
+		20C8971B1AC2D9D4001F65F5 /* MedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedModel.h; sourceTree = "<group>"; };
+		20C8971C1AC2D9D4001F65F5 /* MedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedModel.m; sourceTree = "<group>"; };
+		20C8971E1AC2DAD5001F65F5 /* PatientMedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientMedViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		200A65CE1AC04CE2007E8A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2047EF761AC19777005D91B3 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200A65E71AC04CE2007E8A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		200A65C81AC04CE2007E8A56 = {
+			isa = PBXGroup;
+			children = (
+				20665DCB1AC25DD200395686 /* Frameworks */,
+				200A65D31AC04CE2007E8A56 /* MedicalSystem */,
+				200A65ED1AC04CE2007E8A56 /* MedicalSystemTests */,
+				200A65D21AC04CE2007E8A56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		200A65D21AC04CE2007E8A56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				200A65D11AC04CE2007E8A56 /* MedicalSystem.app */,
+				200A65EA1AC04CE2007E8A56 /* MedicalSystemTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		200A65D31AC04CE2007E8A56 /* MedicalSystem */ = {
+			isa = PBXGroup;
+			children = (
+				200A65FD1AC04D79007E8A56 /* CommonViews */,
+				200A65FE1AC04F23007E8A56 /* NewPatient */,
+				200A66031AC05037007E8A56 /* PatientOut */,
+				200A66021AC0501A007E8A56 /* PatientMed */,
+				200A66011AC04FCA007E8A56 /* PatientCost */,
+				200A66001AC04F77007E8A56 /* PatientState */,
+				200A66041AC05074007E8A56 /* SystemSetting */,
+				200A65DE1AC04CE2007E8A56 /* Main.storyboard */,
+				200A65E31AC04CE2007E8A56 /* LaunchScreen.xib */,
+				200A65E11AC04CE2007E8A56 /* Images.xcassets */,
+				20665DCA1AC25D8A00395686 /* Model */,
+				200A65D41AC04CE2007E8A56 /* Supporting Files */,
+			);
+			path = MedicalSystem;
+			sourceTree = "<group>";
+		};
+		200A65D41AC04CE2007E8A56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20C8970A1AC268D7001F65F5 /* db */,
+				20C896F71AC26868001F65F5 /* FMDatabase */,
+				208BFE251AC1042B008E72DC /* UIImage */,
+				200A65D51AC04CE2007E8A56 /* Info.plist */,
+				200A65D61AC04CE2007E8A56 /* main.m */,
+				2047EF6B1AC1455D005D91B3 /* MedicalPrefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		200A65ED1AC04CE2007E8A56 /* MedicalSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				200A65F01AC04CE2007E8A56 /* MedicalSystemTests.m */,
+				200A65EE1AC04CE2007E8A56 /* Supporting Files */,
+			);
+			path = MedicalSystemTests;
+			sourceTree = "<group>";
+		};
+		200A65EE1AC04CE2007E8A56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				200A65EF1AC04CE2007E8A56 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		200A65FD1AC04D79007E8A56 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				20665DC71AC2563D00395686 /* QRadioButton.h */,
+				20665DC81AC2563D00395686 /* QRadioButton.m */,
+				2047EF641AC12D0E005D91B3 /* NavigationBar.h */,
+				2047EF651AC12D0E005D91B3 /* NavigationBar.m */,
+				200A65FA1AC04D69007E8A56 /* MainViewController.h */,
+				200A65FB1AC04D69007E8A56 /* MainViewController.m */,
+				200A65D81AC04CE2007E8A56 /* AppDelegate.h */,
+				200A65D91AC04CE2007E8A56 /* AppDelegate.m */,
+				2096C9241ACA6C85007B8170 /* MedButton.h */,
+				2096C9251ACA6C85007B8170 /* MedButton.m */,
+				2096C9271ACABB4B007B8170 /* MedTextFiled.h */,
+				2096C9281ACABB4B007B8170 /* MedTextFiled.m */,
+			);
+			name = CommonViews;
+			sourceTree = "<group>";
+		};
+		200A65FE1AC04F23007E8A56 /* NewPatient */ = {
+			isa = PBXGroup;
+			children = (
+				200A66081AC05187007E8A56 /* NewPatientViewController.h */,
+				200A66091AC05187007E8A56 /* NewPatientViewController.m */,
+				2047EF6C1AC1901F005D91B3 /* TotalPatientViewController.h */,
+				2047EF6D1AC1901F005D91B3 /* TotalPatientViewController.m */,
+				2047EF721AC196EE005D91B3 /* PatientDB.h */,
+				2047EF731AC196EE005D91B3 /* PatientDB.m */,
+			);
+			name = NewPatient;
+			sourceTree = "<group>";
+		};
+		200A66001AC04F77007E8A56 /* PatientState */ = {
+			isa = PBXGroup;
+			children = (
+				200A66141AC051CD007E8A56 /* PatientStateViewController.h */,
+				200A66151AC051CD007E8A56 /* PatientStateViewController.m */,
+				205245521AC5874600B3DB80 /* DetailStateViewController.h */,
+				205245531AC5874600B3DB80 /* DetailStateViewController.m */,
+				205245581AC58B2100B3DB80 /* StateDB.h */,
+				205245591AC58B2100B3DB80 /* StateDB.m */,
+			);
+			name = PatientState;
+			sourceTree = "<group>";
+		};
+		200A66011AC04FCA007E8A56 /* PatientCost */ = {
+			isa = PBXGroup;
+			children = (
+				200A66111AC051BB007E8A56 /* PatientCostViewController.h */,
+				200A66121AC051BB007E8A56 /* PatientCostViewController.m */,
+				205DFD691AC4E7D600D40E1A /* TotalCostViewController.h */,
+				205DFD6A1AC4E7D600D40E1A /* TotalCostViewController.m */,
+				2052455B1AC5947300B3DB80 /* MedCostDB.h */,
+				2052455C1AC5947300B3DB80 /* MedCostDB.m */,
+				2052455E1AC5948B00B3DB80 /* PatientCostDB.h */,
+				2052455F1AC5948B00B3DB80 /* PatientCostDB.m */,
+			);
+			name = PatientCost;
+			sourceTree = "<group>";
+		};
+		200A66021AC0501A007E8A56 /* PatientMed */ = {
+			isa = PBXGroup;
+			children = (
+				200A660E1AC051AC007E8A56 /* PatientMedViewController.h */,
+				20C8971E1AC2DAD5001F65F5 /* PatientMedViewController.m */,
+				20C897181AC2D4B1001F65F5 /* MedDB.h */,
+				20C897191AC2D4B1001F65F5 /* MedDB.m */,
+			);
+			name = PatientMed;
+			sourceTree = "<group>";
+		};
+		200A66031AC05037007E8A56 /* PatientOut */ = {
+			isa = PBXGroup;
+			children = (
+				200A660B1AC05197007E8A56 /* PatientOutViewController.h */,
+				200A660C1AC05197007E8A56 /* PatientOutViewController.m */,
+				2052454F1AC581C400B3DB80 /* OutViewController.h */,
+				205245501AC581C400B3DB80 /* OutViewController.m */,
+			);
+			name = PatientOut;
+			sourceTree = "<group>";
+		};
+		200A66041AC05074007E8A56 /* SystemSetting */ = {
+			isa = PBXGroup;
+			children = (
+				200A66171AC051DE007E8A56 /* SystemViewController.h */,
+				200A66181AC051DE007E8A56 /* SystemViewController.m */,
+				20642B201ACBD35C00A8C651 /* RegisterViewController.h */,
+				20642B211ACBD35C00A8C651 /* RegisterViewController.m */,
+				20642B291ACC095A00A8C651 /* ZhuceViewController.h */,
+				20642B2A1ACC095A00A8C651 /* ZhuceViewController.m */,
+				20642B321ACC1EB900A8C651 /* UserDB.h */,
+				20642B331ACC1EB900A8C651 /* UserDB.m */,
+				20642B351ACC1EC700A8C651 /* FellowDB.h */,
+				20642B361ACC1EC700A8C651 /* FellowDB.m */,
+				20642B381ACC265900A8C651 /* AboutViewController.h */,
+				20642B391ACC265900A8C651 /* AboutViewController.m */,
+				20642B3B1ACC266B00A8C651 /* FellowViewController.h */,
+				20642B3C1ACC266B00A8C651 /* FellowViewController.m */,
+			);
+			name = SystemSetting;
+			sourceTree = "<group>";
+		};
+		204838661AC6AE5C0081F735 /* bg */ = {
+			isa = PBXGroup;
+			children = (
+				204838671AC6AE8F0081F735 /* bg1.png */,
+				204838681AC6AE8F0081F735 /* bg2.png */,
+				204838691AC6AE8F0081F735 /* bg3.png */,
+				2048386A1AC6AE8F0081F735 /* bg4.png */,
+				2048386B1AC6AE8F0081F735 /* bg5.png */,
+				2048386C1AC6AE8F0081F735 /* bg6.png */,
+				2048386D1AC6AE8F0081F735 /* bg7.png */,
+			);
+			name = bg;
+			sourceTree = "<group>";
+		};
+		20665DBE1AC255AA00395686 /* QRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				20665DBF1AC2563100395686 /* radio_checked.png */,
+				20665DC01AC2563100395686 /* radio_checked@2x.png */,
+				20665DC11AC2563100395686 /* radio_unchecked.png */,
+				20665DC21AC2563100395686 /* radio_unchecked@2x.png */,
+			);
+			name = QRadioButton;
+			sourceTree = "<group>";
+		};
+		20665DCA1AC25D8A00395686 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20A93CEC1AC96A000096E9F5 /* ClassModel */,
+				20A93CEB1AC969EF0096E9F5 /* DBModel */,
+				2062EE181AC3DAD700889EBA /* MedModelView.h */,
+				2062EE191AC3DAD700889EBA /* MedModelView.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		20665DCB1AC25DD200395686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2047EF751AC19777005D91B3 /* libsqlite3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		208BFE251AC1042B008E72DC /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				2096C9211ACA6796007B8170 /* buttonImage */,
+				204838661AC6AE5C0081F735 /* bg */,
+				20665DBE1AC255AA00395686 /* QRadioButton */,
+				208BFE261AC10438008E72DC /* tabbarImage */,
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
+		208BFE261AC10438008E72DC /* tabbarImage */ = {
+			isa = PBXGroup;
+			children = (
+				204838631AC69A130081F735 /* tarbar_add.png */,
+				2047EF671AC132C9005D91B3 /* nav_bg.png */,
+				2047EF601AC129FC005D91B3 /* tabbar_mainbtn_bg.png */,
+				2047EF611AC129FC005D91B3 /* tabbar_mainbtn.png */,
+				208BFE271AC1044C008E72DC /* tabbar_background.png */,
+				208BFE281AC1044C008E72DC /* tabbar_discover_highlighted.png */,
+				208BFE291AC1044C008E72DC /* tabbar_discover.png */,
+				208BFE2A1AC1044C008E72DC /* tabbar_home_highlighted.png */,
+				208BFE2B1AC1044C008E72DC /* tabbar_home.png */,
+				208BFE2C1AC1044C008E72DC /* tabbar_message_center_highlighted.png */,
+				208BFE2D1AC1044C008E72DC /* tabbar_message_center.png */,
+				208BFE2E1AC1044C008E72DC /* tabbar_more_highlighted.png */,
+				208BFE2F1AC1044C008E72DC /* tabbar_more.png */,
+				208BFE301AC1044C008E72DC /* tabbar_profile_highlighted.png */,
+				208BFE311AC1044C008E72DC /* tabbar_profile.png */,
+				208BFE321AC1044C008E72DC /* tabbar_slider.png */,
+			);
+			name = tabbarImage;
+			sourceTree = "<group>";
+		};
+		2096C9211ACA6796007B8170 /* buttonImage */ = {
+			isa = PBXGroup;
+			children = (
+				205CCC361AFC546600DD752B /* yiliao.png */,
+				205E81271ACCDF4400F8C24C /* weidenglu.png */,
+				20642B261ACBDB4600A8C651 /* logo1.png */,
+				2096C9221ACA67C7007B8170 /* delete.png */,
+				2047EF791AC19FA6005D91B3 /* navigationbar_back_highlighted.png */,
+				2047EF691AC139F8005D91B3 /* 0.png */,
+			);
+			name = buttonImage;
+			sourceTree = "<group>";
+		};
+		20A93CEB1AC969EF0096E9F5 /* DBModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DBModel;
+			sourceTree = "<group>";
+		};
+		20A93CEC1AC96A000096E9F5 /* ClassModel */ = {
+			isa = PBXGroup;
+			children = (
+				20C8971B1AC2D9D4001F65F5 /* MedModel.h */,
+				20C8971C1AC2D9D4001F65F5 /* MedModel.m */,
+				2047EF6F1AC193C0005D91B3 /* Patient.h */,
+				2047EF701AC193C0005D91B3 /* Patient.m */,
+				205DFD6C1AC5053400D40E1A /* PatientCostModel.h */,
+				205DFD6D1AC5053400D40E1A /* PatientCostModel.m */,
+				205DFD6F1AC5054E00D40E1A /* MedCostModel.h */,
+				205DFD701AC5054E00D40E1A /* MedCostModel.m */,
+				205245551AC589BF00B3DB80 /* State.h */,
+				205245561AC589BF00B3DB80 /* State.m */,
+				20642B2C1ACC1CFA00A8C651 /* UserModel.h */,
+				20642B2D1ACC1CFA00A8C651 /* UserModel.m */,
+				20642B2F1ACC1D1500A8C651 /* FellowModel.h */,
+				20642B301ACC1D1500A8C651 /* FellowModel.m */,
+			);
+			name = ClassModel;
+			sourceTree = "<group>";
+		};
+		20C896F71AC26868001F65F5 /* FMDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				20C896F81AC268C9001F65F5 /* FMDatabase.h */,
+				20C896F91AC268C9001F65F5 /* FMDatabase.m */,
+				20C896FA1AC268C9001F65F5 /* FMDatabaseAdditions.h */,
+				20C896FB1AC268C9001F65F5 /* FMDatabaseAdditions.m */,
+				20C896FC1AC268C9001F65F5 /* FMDatabasePool.h */,
+				20C896FD1AC268C9001F65F5 /* FMDatabasePool.m */,
+				20C896FE1AC268C9001F65F5 /* FMDatabaseQueue.h */,
+				20C896FF1AC268C9001F65F5 /* FMDatabaseQueue.m */,
+				20C897001AC268C9001F65F5 /* FMResultSet.h */,
+				20C897011AC268C9001F65F5 /* FMResultSet.m */,
+			);
+			name = FMDatabase;
+			sourceTree = "<group>";
+		};
+		20C8970A1AC268D7001F65F5 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				2047EF771AC19DFB005D91B3 /* MedicalSystem.sqlite */,
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		200A65D01AC04CE2007E8A56 /* MedicalSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200A65F41AC04CE2007E8A56 /* Build configuration list for PBXNativeTarget "MedicalSystem" */;
+			buildPhases = (
+				200A65CD1AC04CE2007E8A56 /* Sources */,
+				200A65CE1AC04CE2007E8A56 /* Frameworks */,
+				200A65CF1AC04CE2007E8A56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedicalSystem;
+			productName = MedicalSystem;
+			productReference = 200A65D11AC04CE2007E8A56 /* MedicalSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		200A65E91AC04CE2007E8A56 /* MedicalSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200A65F71AC04CE2007E8A56 /* Build configuration list for PBXNativeTarget "MedicalSystemTests" */;
+			buildPhases = (
+				200A65E61AC04CE2007E8A56 /* Sources */,
+				200A65E71AC04CE2007E8A56 /* Frameworks */,
+				200A65E81AC04CE2007E8A56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				200A65EC1AC04CE2007E8A56 /* PBXTargetDependency */,
+			);
+			name = MedicalSystemTests;
+			productName = MedicalSystemTests;
+			productReference = 200A65EA1AC04CE2007E8A56 /* MedicalSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		200A65C91AC04CE2007E8A56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = xiatei;
+				TargetAttributes = {
+					200A65D01AC04CE2007E8A56 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					200A65E91AC04CE2007E8A56 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 200A65D01AC04CE2007E8A56;
+					};
+				};
+			};
+			buildConfigurationList = 200A65CC1AC04CE2007E8A56 /* Build configuration list for PBXProject "MedicalSystem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 200A65C81AC04CE2007E8A56;
+			productRefGroup = 200A65D21AC04CE2007E8A56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				200A65D01AC04CE2007E8A56 /* MedicalSystem */,
+				200A65E91AC04CE2007E8A56 /* MedicalSystemTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		200A65CF1AC04CE2007E8A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205E81281ACCDF4400F8C24C /* weidenglu.png in Resources */,
+				204838741AC6AE8F0081F735 /* bg7.png in Resources */,
+				2047EF6A1AC139F8005D91B3 /* 0.png in Resources */,
+				208BFE3B1AC1044C008E72DC /* tabbar_more.png in Resources */,
+				208BFE351AC1044C008E72DC /* tabbar_discover.png in Resources */,
+				204838731AC6AE8F0081F735 /* bg6.png in Resources */,
+				20665DC61AC2563100395686 /* radio_unchecked@2x.png in Resources */,
+				2048386E1AC6AE8F0081F735 /* bg1.png in Resources */,
+				208BFE3A1AC1044C008E72DC /* tabbar_more_highlighted.png in Resources */,
+				2047EF7A1AC19FA6005D91B3 /* navigationbar_back_highlighted.png in Resources */,
+				208BFE381AC1044C008E72DC /* tabbar_message_center_highlighted.png in Resources */,
+				20665DC51AC2563100395686 /* radio_unchecked.png in Resources */,
+				2047EF621AC129FC005D91B3 /* tabbar_mainbtn_bg.png in Resources */,
+				208BFE3C1AC1044C008E72DC /* tabbar_profile_highlighted.png in Resources */,
+				20642B271ACBDB4600A8C651 /* logo1.png in Resources */,
+				208BFE3D1AC1044C008E72DC /* tabbar_profile.png in Resources */,
+				204838701AC6AE8F0081F735 /* bg3.png in Resources */,
+				20665DC31AC2563100395686 /* radio_checked.png in Resources */,
+				200A65E01AC04CE2007E8A56 /* Main.storyboard in Resources */,
+				2096C9231ACA67C7007B8170 /* delete.png in Resources */,
+				208BFE3E1AC1044C008E72DC /* tabbar_slider.png in Resources */,
+				208BFE341AC1044C008E72DC /* tabbar_discover_highlighted.png in Resources */,
+				2047EF681AC132C9005D91B3 /* nav_bg.png in Resources */,
+				200A65E51AC04CE2007E8A56 /* LaunchScreen.xib in Resources */,
+				200A65E21AC04CE2007E8A56 /* Images.xcassets in Resources */,
+				2047EF631AC129FC005D91B3 /* tabbar_mainbtn.png in Resources */,
+				208BFE331AC1044C008E72DC /* tabbar_background.png in Resources */,
+				204838651AC69A130081F735 /* tarbar_add.png in Resources */,
+				204838721AC6AE8F0081F735 /* bg5.png in Resources */,
+				204838711AC6AE8F0081F735 /* bg4.png in Resources */,
+				2048386F1AC6AE8F0081F735 /* bg2.png in Resources */,
+				2047EF781AC19DFB005D91B3 /* MedicalSystem.sqlite in Resources */,
+				208BFE371AC1044C008E72DC /* tabbar_home.png in Resources */,
+				205CCC371AFC546600DD752B /* yiliao.png in Resources */,
+				208BFE391AC1044C008E72DC /* tabbar_message_center.png in Resources */,
+				208BFE361AC1044C008E72DC /* tabbar_home_highlighted.png in Resources */,
+				20665DC41AC2563100395686 /* radio_checked@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200A65E81AC04CE2007E8A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		200A65CD1AC04CE2007E8A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				205245571AC589BF00B3DB80 /* State.m in Sources */,
+				20665DC91AC2563D00395686 /* QRadioButton.m in Sources */,
+				2096C9261ACA6C85007B8170 /* MedButton.m in Sources */,
+				200A65DA1AC04CE2007E8A56 /* AppDelegate.m in Sources */,
+				20642B341ACC1EB900A8C651 /* UserDB.m in Sources */,
+				200A66131AC051BB007E8A56 /* PatientCostViewController.m in Sources */,
+				200A65D71AC04CE2007E8A56 /* main.m in Sources */,
+				2096C9291ACABB4B007B8170 /* MedTextFiled.m in Sources */,
+				20C897051AC268C9001F65F5 /* FMDatabaseAdditions.m in Sources */,
+				2047EF6E1AC1901F005D91B3 /* TotalPatientViewController.m in Sources */,
+				20C8971A1AC2D4B1001F65F5 /* MedDB.m in Sources */,
+				20642B2B1ACC095A00A8C651 /* ZhuceViewController.m in Sources */,
+				200A660D1AC05197007E8A56 /* PatientOutViewController.m in Sources */,
+				200A66191AC051DE007E8A56 /* SystemViewController.m in Sources */,
+				205245601AC5948B00B3DB80 /* PatientCostDB.m in Sources */,
+				200A66161AC051CD007E8A56 /* PatientStateViewController.m in Sources */,
+				2052455A1AC58B2100B3DB80 /* StateDB.m in Sources */,
+				20642B311ACC1D1500A8C651 /* FellowModel.m in Sources */,
+				205245511AC581C400B3DB80 /* OutViewController.m in Sources */,
+				20C897071AC268C9001F65F5 /* FMDatabaseQueue.m in Sources */,
+				2047EF741AC196EE005D91B3 /* PatientDB.m in Sources */,
+				205DFD6B1AC4E7D600D40E1A /* TotalCostViewController.m in Sources */,
+				2052455D1AC5947300B3DB80 /* MedCostDB.m in Sources */,
+				20642B3D1ACC266B00A8C651 /* FellowViewController.m in Sources */,
+				200A65FC1AC04D69007E8A56 /* MainViewController.m in Sources */,
+				205DFD6E1AC5053400D40E1A /* PatientCostModel.m in Sources */,
+				2047EF711AC193C0005D91B3 /* Patient.m in Sources */,
+				20C8971D1AC2D9D4001F65F5 /* MedModel.m in Sources */,
+				20C8971F1AC2DAD5001F65F5 /* PatientMedViewController.m in Sources */,
+				20642B2E1ACC1CFA00A8C651 /* UserModel.m in Sources */,
+				20642B3A1ACC265900A8C651 /* AboutViewController.m in Sources */,
+				20642B221ACBD35C00A8C651 /* RegisterViewController.m in Sources */,
+				20C897081AC268C9001F65F5 /* FMResultSet.m in Sources */,
+				20C897061AC268C9001F65F5 /* FMDatabasePool.m in Sources */,
+				205245541AC5874600B3DB80 /* DetailStateViewController.m in Sources */,
+				2047EF661AC12D0E005D91B3 /* NavigationBar.m in Sources */,
+				2062EE1A1AC3DAD700889EBA /* MedModelView.m in Sources */,
+				20642B371ACC1EC700A8C651 /* FellowDB.m in Sources */,
+				205DFD711AC5054E00D40E1A /* MedCostModel.m in Sources */,
+				200A660A1AC05187007E8A56 /* NewPatientViewController.m in Sources */,
+				20C897041AC268C9001F65F5 /* FMDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200A65E61AC04CE2007E8A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200A65F11AC04CE2007E8A56 /* MedicalSystemTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		200A65EC1AC04CE2007E8A56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 200A65D01AC04CE2007E8A56 /* MedicalSystem */;
+			targetProxy = 200A65EB1AC04CE2007E8A56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		200A65DE1AC04CE2007E8A56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200A65DF1AC04CE2007E8A56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		200A65E31AC04CE2007E8A56 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200A65E41AC04CE2007E8A56 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		200A65F21AC04CE2007E8A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		200A65F31AC04CE2007E8A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		200A65F51AC04CE2007E8A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MedicalSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		200A65F61AC04CE2007E8A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MedicalSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		200A65F81AC04CE2007E8A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MedicalSystemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedicalSystem.app/MedicalSystem";
+			};
+			name = Debug;
+		};
+		200A65F91AC04CE2007E8A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MedicalSystemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedicalSystem.app/MedicalSystem";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		200A65CC1AC04CE2007E8A56 /* Build configuration list for PBXProject "MedicalSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200A65F21AC04CE2007E8A56 /* Debug */,
+				200A65F31AC04CE2007E8A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200A65F41AC04CE2007E8A56 /* Build configuration list for PBXNativeTarget "MedicalSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200A65F51AC04CE2007E8A56 /* Debug */,
+				200A65F61AC04CE2007E8A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200A65F71AC04CE2007E8A56 /* Build configuration list for PBXNativeTarget "MedicalSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200A65F81AC04CE2007E8A56 /* Debug */,
+				200A65F91AC04CE2007E8A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 200A65C91AC04CE2007E8A56 /* Project object */;
+}
