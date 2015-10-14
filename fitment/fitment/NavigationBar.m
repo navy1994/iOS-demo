@@ -14,13 +14,8 @@
 - (id) initWithFrame:(CGRect)frame{
 	self = [super initWithFrame:frame];
 	if (self) {
-		[self setBackgroundImage:[UIImage imageNamed:@"head.png"] forBarMetrics:UIBarMetricsDefault];
-//		self.layer.masksToBounds = NO;
-//		//设置阴影的高度
-//		self.layer.shadowOffset = CGSizeMake(0, 1);
-//		//设置透明度
-//		self.layer.shadowOpacity = 0.3;
-//		self.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.bounds].CGPath;
+        [self setBarTintColor:[UIColor colorWithRed:27.0f/255.0f green:103.0f/255.0f blue:162.0f/255.0f alpha:1.0f]];
+        [self setTintColor:[UIColor blackColor]];
 		[self setFrame:frame];
 	}
 	return self;

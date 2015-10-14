@@ -32,6 +32,8 @@
 #import "CompanyViewController.h"
 #import "ProfileViewController.h"
 
+#import "SDImageCache.h"
+
 @interface AppDelegate ()
 
 @end
@@ -40,14 +42,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    NSString *bundledPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CustomPathImages"];
+    [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
 	
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
 	self.window.backgroundColor = [UIColor whiteColor];
 	
-	MainViewController *mainVC = [[MainViewController alloc]init];
-	mainVC.tabBar.backgroundImage = [UIImage imageNamed:@"tabbar_background.png"];
+	self.mainVC = [[MainViewController alloc]init];
+	_mainVC.tabBar.backgroundImage = [UIImage imageNamed:@"tabbar_background.png"];
+    
+//    self.navigationController = [[UINavigationController alloc]init];
+//    
+//    [_navigationController pushViewController:_mainVC animated:YES];
 	
-	self.window.rootViewController = mainVC;
+	self.window.rootViewController = _mainVC;
 	
 	NSDictionary *defaultValues = [NSDictionary dictionaryWithObjectsAndKeys:@"未登录",@"userName", nil];
 	[[NSUserDefaults standardUserDefaults]registerDefaults:defaultValues];

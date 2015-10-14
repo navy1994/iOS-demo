@@ -29,17 +29,18 @@
 	
 	self.homeViewController = [[CCXHomeViewController alloc]init];
 	self.rootNavigationController = [[UINavigationController alloc]initWithRootViewController:self.homeViewController];
+	NSDictionary *defaultValues = [NSDictionary dictionaryWithObjectsAndKeys:@[@"无记录"],@"myArray", nil];
+	[[NSUserDefaults standardUserDefaults]registerDefaults:defaultValues];
+//	self.tabBarController = [[UITabBarController alloc]init];
+//	_tabBarController.tabBar.tintColor = [UIColor whiteColor];
+//	_tabBarController.tabBar.barTintColor = [UIColor colorWithRed:192.0f/255.0f green:37.0f/255.0f blue:62.0f/255.0f alpha:1.0f];
+//	
+//	_tabBarController.viewControllers = [NSArray arrayWithObjects:_rootNavigationController, nil];
+//	
+//	_rootNavigationController.tabBarItem.title = @"主页";
+//	_tabBarController.selectedViewController = _rootNavigationController;
 	
-	self.tabBarController = [[UITabBarController alloc]init];
-	_tabBarController.tabBar.tintColor = [UIColor whiteColor];
-	_tabBarController.tabBar.barTintColor = [UIColor colorWithRed:192.0f/255.0f green:37.0f/255.0f blue:62.0f/255.0f alpha:1.0f];
-	
-	_tabBarController.viewControllers = [NSArray arrayWithObjects:_rootNavigationController, nil];
-	
-	_rootNavigationController.tabBarItem.title = @"主页";
-	_tabBarController.selectedViewController = _rootNavigationController;
-	
-	[self.window addSubview:_tabBarController.view];
+	[self.window addSubview:_rootNavigationController.view];
 	
 	[self.window makeKeyAndVisible];
 	

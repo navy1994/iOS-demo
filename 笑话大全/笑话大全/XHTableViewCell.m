@@ -14,11 +14,11 @@
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 	self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
 	if (self) {
-		self.content = [[UILabel alloc]initWithFrame:CGRectMake(10, 5, fDeviceWidth-20, 140)];
+		self.content = [[UILabel alloc]initWithFrame:CGRectMake(10, 5, fDeviceWidth-20, 170)];
 		_content.font = [UIFont boldSystemFontOfSize:13];
-		_content.numberOfLines = 8;
+		_content.numberOfLines = 0;
 		[self.contentView addSubview:_content];
-		self.updatetime = [[UILabel alloc]initWithFrame:CGRectMake(10, 145, fDeviceWidth-20, 20)];
+		self.updatetime = [[UILabel alloc]initWithFrame:CGRectMake(10, 175, fDeviceWidth-20, 20)];
 		_updatetime.textAlignment = NSTextAlignmentRight;
 		_updatetime.font = [UIFont boldSystemFontOfSize:12];
 		[self.contentView addSubview:_updatetime];

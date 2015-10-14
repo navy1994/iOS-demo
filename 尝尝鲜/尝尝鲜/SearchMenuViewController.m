@@ -54,9 +54,13 @@
 	_navigation.type = type;
 	_navigation.leftImage  = [UIImage imageNamed:@"nav_chbackbtn.png"];
 	_navigation.delegate = self;
+	_navigation.seachBar.placeholder = @"菜谱关键字";
+	_navigation.seachBar.delegate = self;
 	_navigation.navigaionBackColor = [UIColor colorWithRed:192.0f/255.0f green:37.0f/255.0f blue:62.0f/255.0f alpha:1.0f];
 	_navigation.backgroundColor = [UIColor whiteColor];
 	[self.view addSubview:_navigation];
+	
+	[self readNSUserDefaults];
 	
 	_menuTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, height, fDeviceWidth, fDeviceHeight-height)];
 	_menuTableView.dataSource = self;
@@ -92,6 +96,14 @@
 	SDWebImageManager.sharedManager.imageDownloader.executionOrder = SDWebImageDownloaderLIFOExecutionOrder;
 }
 
+-(void)readNSUserDefaults
+{
+	NSUserDefaults *userDefaultes = [NSUserDefaults standardUserDefaults];
+	//读取数组NSArray类型的数据
+	_historyArray = [userDefaultes arrayForKey:@"myArray"];
+	NSLog(@"myArray======%@",_historyArray);
+}
+
 - (void)flushCache
 {
 	[SDWebImageManager.sharedManager.imageCache clearMemory];
@@ -105,14 +117,66 @@
 }
 
 #pragma mark ---- UIsearchDelegate
-- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
+	return YES;
+}
+
+-(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+{
+	[searchBar setShowsCancelButton:YES animated:YES];
+	searchBar.keyboardType = UIKeyboardTypeNamePhonePad;
+	UIButton *cancelButton;
+	UIView *topView = searchBar.subviews[0];
+	for (UIView *subView in topView.subviews) {
+		if ([subView isKindOfClass:NSClassFromString(@"UINavigationButton")]) {
+			cancelButton = (UIButton*)subView;
+		}
+	}
+	if (cancelButton) {
+		//Set the new title of the cancel button
+		[cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+		[cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+		cancelButton.titleLabel.font = [UIFont fontWithName:@"Heiti SC" size:15];
+	}
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar //键盘搜索键 点击 事件
+{
 	[_useJuhe JuheAPI:@"http://apis.juhe.cn/cook/query.php" apiID:@"46" parameters:@{@"menu":_navigation.seachBar.text,@"dtype":@"json"} method:@"get" Block:^(id result){
 		if (result) {
 			[self presentController:result];
 		}
 	}];
-	
+	NSUserDefaults *userDefaultes = [NSUserDefaults standardUserDefaults];
+	//读取数组NSArray类型的数据
+	NSArray *myArray = [userDefaultes arrayForKey:@"myArray"];
+	// NSArray --> NSMutableArray
+	NSMutableArray *searTXT = [myArray mutableCopy];
+	[searTXT addObject:_navigation.seachBar.text];
+	if(searTXT.count > 5)
+	{
+		[searTXT removeObjectAtIndex:0];
+	}else{
+		if ([[searTXT objectAtIndex:0]isEqualToString:@"无记录"]) {
+			[searTXT removeObjectAtIndex:0];
+		}
+	}
+	//将上述数据全部存储到NSUserDefaults中
+	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+	[userDefaults setObject:searTXT forKey:@"myArray"];
+	[searchBar resignFirstResponder];
 }
+
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+	[searchBar setShowsCancelButton:NO animated:YES];
+	searchBar.text = nil;
+	[searchBar resignFirstResponder];
+}
+
+//- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+//	
+//}
 
 - (void)presentController:resultData{
 	if ([_menuTableView isHidden]) {
@@ -128,6 +192,7 @@
 - (void)hySegmentedControlSelectAtIndex:(NSInteger)index{
 	selectIndex = index;
 	NSLog(@"xuanze=%ld",index);
+	[self readNSUserDefaults];
 	[_collectionView reloadData];
 }
 
@@ -166,7 +231,7 @@
 	[cell.contentView addSubview:_cityLabel];
 	
 	if (selectIndex) {
-		
+		_cityLabel.text = [_historyArray objectAtIndex:indexPath.row];
 	}else{
 		_cityLabel.text = [[_hotSearchArray objectAtIndex:indexPath.row]objectForKey:@"name"];
 	}
@@ -198,6 +263,23 @@
 		
 	}else{
 		_navigation.seachBar.text = [[_hotSearchArray objectAtIndex:indexPath.row]objectForKey:@"name"];
+		NSUserDefaults *userDefaultes = [NSUserDefaults standardUserDefaults];
+		//读取数组NSArray类型的数据
+		NSArray *myArray = [userDefaultes arrayForKey:@"myArray"];
+		// NSArray --> NSMutableArray
+		NSMutableArray *searTXT = [myArray mutableCopy];
+		[searTXT addObject:[[_hotSearchArray objectAtIndex:indexPath.row]objectForKey:@"name"]];
+		if(searTXT.count > 5)
+		{
+			[searTXT removeObjectAtIndex:0];
+		}else{
+			if ([[searTXT objectAtIndex:0]isEqualToString:@"无记录"]) {
+				[searTXT removeObjectAtIndex:0];
+			}
+		}
+		//将上述数据全部存储到NSUserDefaults中
+		NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+		[userDefaults setObject:searTXT forKey:@"myArray"];
 	}
 	[_useJuhe JuheAPI:@"http://apis.juhe.cn/cook/query.php" apiID:@"46" parameters:@{@"menu":_navigation.seachBar.text,@"dtype":@"json"} method:@"get" Block:^(id result){
 		if (result) {

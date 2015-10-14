@@ -12,6 +12,7 @@
 #import "NavigationBar.h"
 #import "DetailCaseViewController.h"
 #import "FitmentPrefix.pch"
+#import "UIImageView+WebCache.h"
 
 @interface HomeViewController ()
 
@@ -25,26 +26,23 @@
 	
 	dbCase = [[CaseDB alloc]init];
 	self.cases = [dbCase getAllData];
+    
+    NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
+    //创建一个导航栏集合
+    UINavigationItem *navigationItem = [[UINavigationItem alloc] initWithTitle:@"主页"];
+    
+    //把导航栏集合添加入导航栏中，设置动画关闭
+    [navBar pushNavigationItem:navigationItem animated:NO];
+    
+    //把导航栏添加到视图中
+    [self.view addSubview:navBar];
 
-	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 50)];
-	
-	//创建一个导航栏集合
-	UINavigationItem *navigationItem = [[UINavigationItem alloc] initWithTitle:nil];
-	
-	//设置导航栏内容
-	[navigationItem setTitle:@"主页"];
-	
-	//把导航栏集合添加入导航栏中，设置动画关闭
-	[navBar pushNavigationItem:navigationItem animated:NO];
-	
-	//把导航栏添加到视图中
-	[self.view addSubview:navBar];
 	
 	float AD_height = 150;//广告栏高度
 	UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc] init];
 	[flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
 	flowLayout.headerReferenceSize = CGSizeMake(fDeviceWidth, AD_height+60);//头部
-	self.aCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 65, fDeviceWidth, fDeviceHeight + 65) collectionViewLayout:flowLayout];
+	self.aCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, fDeviceWidth, ((fDeviceWidth-20)/2+50)*3) collectionViewLayout:flowLayout];
 	
 	//设置代理
 	self.aCollectionView.delegate = self;
@@ -80,10 +78,23 @@
 	}
 	
 	[_headerView setArray:self.imgArray];
+    
+    //注册
+    [SDWebImageManager sharedManager].imageDownloader.username = @"httpwatch";
+    [SDWebImageManager sharedManager].imageDownloader.password = @"httpwatch01";
+    //设定图片存储顺序
+    [SDWebImageManager.sharedManager.imageDownloader setValue:@"SDWebImage Demo" forHTTPHeaderField:@"AppName"];
+    SDWebImageManager.sharedManager.imageDownloader.executionOrder = SDWebImageDownloaderLIFOExecutionOrder;
 	
     [super viewDidLoad];
     // Do any additional setup after loading the view.ß
 	
+}
+
+- (void)flushCache
+{
+    [SDWebImageManager.sharedManager.imageCache clearMemory];
+    [SDWebImageManager.sharedManager.imageCache clearDisk];
 }
 
 
@@ -134,6 +145,7 @@
 	}
 	if (indexPath.row < 3) {
 		Image *image = [self.image objectAtIndex:rand()%49];
+        
 		cell.imgview.image = image.Image;
 		
 		self.aCase = [self.cases objectAtIndex:indexPath.row];
@@ -161,7 +173,12 @@
 {
 	//边距占5*4=20 ，2个
 	//图片为正方形，边长：(fDeviceWidth-20)/2-5-5 所以总高(fDeviceWidth-20)/2-5-5 +20+30+5+5 label高20 btn高30 边
-	return CGSizeMake(fDeviceWidth, (fDeviceWidth-20)/2+50);
+    if (indexPath.row < 3) {
+        return CGSizeMake(fDeviceWidth, (fDeviceWidth-20)/2+50);
+    }else{
+        return CGSizeMake(fDeviceWidth, (fDeviceWidth-20)/2+50);
+    }
+    
 }
 //定义每个UICollectionView 的间距
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section

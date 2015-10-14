@@ -55,7 +55,7 @@
 	_tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, height, fDeviceWidth, fDeviceHeight-height)];
 	_tableView.dataSource = self;
 	_tableView.delegate = self;
-	_tableView.rowHeight = 170;
+	_tableView.rowHeight = 200;
 	_tableView.sectionFooterHeight = height;
 	[self.view addSubview:_tableView];
 	page = 1;

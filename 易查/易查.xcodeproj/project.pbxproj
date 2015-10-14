@@ -23,6 +23,9 @@
 		201FF2A01B23E9910069A660 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 201FF28E1B23E9910069A660 /* UIImageView+HighlightedWebCache.m */; };
 		201FF2A11B23E9910069A660 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 201FF2901B23E9910069A660 /* UIImageView+WebCache.m */; };
 		201FF2A21B23E9910069A660 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 201FF2921B23E9910069A660 /* UIView+WebCacheOperation.m */; };
+		201FF3B51B28535B0069A660 /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 201FF3B01B28535B0069A660 /* LewPopupBackgroundView.m */; };
+		201FF3B61B28535B0069A660 /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 201FF3B21B28535B0069A660 /* LewPopupViewAnimationDrop.m */; };
+		201FF3B71B28535B0069A660 /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201FF3B41B28535B0069A660 /* UIViewController+LewPopupViewController.m */; };
 		204F1DE21B131E5E00F68C8D /* Address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 204F1DE11B131E5E00F68C8D /* Address.plist */; };
 		205103851B1564BD0004C122 /* ExpressCompanyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 205103841B1564BD0004C122 /* ExpressCompanyView.m */; };
 		2051038D1B16C3CE0004C122 /* YCExpressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2051038C1B16C3CE0004C122 /* YCExpressTableViewCell.m */; };
@@ -108,9 +111,6 @@
 		20651E021B10655100215ABE /* openDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = 20651E001B10655100215ABE /* openDetail.png */; };
 		20651E051B106AFB00215ABE /* YCOpenDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20651E041B106AFB00215ABE /* YCOpenDetailView.m */; };
 		20651E081B10899100215ABE /* YCPickerCityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20651E071B10899100215ABE /* YCPickerCityView.m */; };
-		206A984F1B0EE16D00AC46E8 /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A984A1B0EE16D00AC46E8 /* LewPopupBackgroundView.m */; };
-		206A98501B0EE16D00AC46E8 /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A984C1B0EE16D00AC46E8 /* LewPopupViewAnimationDrop.m */; };
-		206A98511B0EE16D00AC46E8 /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A984E1B0EE16D00AC46E8 /* UIViewController+LewPopupViewController.m */; };
 		206A98531B0EE37900AC46E8 /* YCDetailWeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 206A98521B0EE37900AC46E8 /* YCDetailWeatherView.xib */; };
 		206A985E1B0F2EA900AC46E8 /* YCWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A985D1B0F2EA900AC46E8 /* YCWeatherView.m */; };
 		207090601B19EA3C0077F014 /* YCCommodityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2070905F1B19EA3C0077F014 /* YCCommodityViewController.m */; };
@@ -170,6 +170,12 @@
 		201FF2901B23E9910069A660 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		201FF2911B23E9910069A660 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		201FF2921B23E9910069A660 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		201FF3AF1B28535B0069A660 /* LewPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupBackgroundView.h; sourceTree = "<group>"; };
+		201FF3B01B28535B0069A660 /* LewPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupBackgroundView.m; sourceTree = "<group>"; };
+		201FF3B11B28535B0069A660 /* LewPopupViewAnimationDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationDrop.h; sourceTree = "<group>"; };
+		201FF3B21B28535B0069A660 /* LewPopupViewAnimationDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationDrop.m; sourceTree = "<group>"; };
+		201FF3B31B28535B0069A660 /* UIViewController+LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LewPopupViewController.h"; sourceTree = "<group>"; };
+		201FF3B41B28535B0069A660 /* UIViewController+LewPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LewPopupViewController.m"; sourceTree = "<group>"; };
 		204F1DE11B131E5E00F68C8D /* Address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Address.plist; path = Resourse/Address.plist; sourceTree = "<group>"; };
 		205103831B1564BD0004C122 /* ExpressCompanyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressCompanyView.h; sourceTree = "<group>"; };
 		205103841B1564BD0004C122 /* ExpressCompanyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressCompanyView.m; sourceTree = "<group>"; };
@@ -267,12 +273,6 @@
 		20651E041B106AFB00215ABE /* YCOpenDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCOpenDetailView.m; sourceTree = "<group>"; };
 		20651E061B10899100215ABE /* YCPickerCityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPickerCityView.h; sourceTree = "<group>"; };
 		20651E071B10899100215ABE /* YCPickerCityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPickerCityView.m; sourceTree = "<group>"; };
-		206A98491B0EE16D00AC46E8 /* LewPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupBackgroundView.h; sourceTree = "<group>"; };
-		206A984A1B0EE16D00AC46E8 /* LewPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupBackgroundView.m; sourceTree = "<group>"; };
-		206A984B1B0EE16D00AC46E8 /* LewPopupViewAnimationDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationDrop.h; sourceTree = "<group>"; };
-		206A984C1B0EE16D00AC46E8 /* LewPopupViewAnimationDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationDrop.m; sourceTree = "<group>"; };
-		206A984D1B0EE16D00AC46E8 /* UIViewController+LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LewPopupViewController.h"; sourceTree = "<group>"; };
-		206A984E1B0EE16D00AC46E8 /* UIViewController+LewPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LewPopupViewController.m"; sourceTree = "<group>"; };
 		206A98521B0EE37900AC46E8 /* YCDetailWeatherView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCDetailWeatherView.xib; sourceTree = "<group>"; };
 		206A985C1B0F2EA900AC46E8 /* YCWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCWeatherView.h; sourceTree = "<group>"; };
 		206A985D1B0F2EA900AC46E8 /* YCWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCWeatherView.m; sourceTree = "<group>"; };
@@ -364,6 +364,19 @@
 			);
 			path = SDWebImage;
 			sourceTree = "<group>";
+		};
+		201FF3AE1B28535B0069A660 /* popupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				201FF3AF1B28535B0069A660 /* LewPopupBackgroundView.h */,
+				201FF3B01B28535B0069A660 /* LewPopupBackgroundView.m */,
+				201FF3B11B28535B0069A660 /* LewPopupViewAnimationDrop.h */,
+				201FF3B21B28535B0069A660 /* LewPopupViewAnimationDrop.m */,
+				201FF3B31B28535B0069A660 /* UIViewController+LewPopupViewController.h */,
+				201FF3B41B28535B0069A660 /* UIViewController+LewPopupViewController.m */,
+			);
+			path = popupViewController;
+			sourceTree = SOURCE_ROOT;
 		};
 		205103821B15645F0004C122 /* express */ = {
 			isa = PBXGroup;
@@ -539,19 +552,6 @@
 			path = "其他";
 			sourceTree = "<group>";
 		};
-		206A98481B0EE16D00AC46E8 /* popupViewController */ = {
-			isa = PBXGroup;
-			children = (
-				206A98491B0EE16D00AC46E8 /* LewPopupBackgroundView.h */,
-				206A984A1B0EE16D00AC46E8 /* LewPopupBackgroundView.m */,
-				206A984B1B0EE16D00AC46E8 /* LewPopupViewAnimationDrop.h */,
-				206A984C1B0EE16D00AC46E8 /* LewPopupViewAnimationDrop.m */,
-				206A984D1B0EE16D00AC46E8 /* UIViewController+LewPopupViewController.h */,
-				206A984E1B0EE16D00AC46E8 /* UIViewController+LewPopupViewController.m */,
-			);
-			path = popupViewController;
-			sourceTree = "<group>";
-		};
 		2090355A1B19B8C1008DEBD6 /* commodity */ = {
 			isa = PBXGroup;
 			children = (
@@ -636,7 +636,7 @@
 		209802A61B0B447500C4BEAC /* view */ = {
 			isa = PBXGroup;
 			children = (
-				206A98481B0EE16D00AC46E8 /* popupViewController */,
+				201FF3AE1B28535B0069A660 /* popupViewController */,
 				209802A71B0B448B00C4BEAC /* RGCardViewLayout.h */,
 				209802A81B0B448B00C4BEAC /* RGCardViewLayout.m */,
 				209802AB1B0B618000C4BEAC /* YCCollectionViewCell.h */,
@@ -828,6 +828,7 @@
 				201FF2A21B23E9910069A660 /* UIView+WebCacheOperation.m in Sources */,
 				205CF65D1B0DEA69001FB08E /* YCUseJuheSdk.m in Sources */,
 				201FF29A1B23E9910069A660 /* SDWebImageManager.m in Sources */,
+				201FF3B51B28535B0069A660 /* LewPopupBackgroundView.m in Sources */,
 				209035591B186A26008DEBD6 /* YCExpressViewController.m in Sources */,
 				205CF6471B0D9134001FB08E /* ZZNavigationView.m in Sources */,
 				205CF6411B0D8A72001FB08E /* YCWeatherViewController.m in Sources */,
@@ -835,10 +836,9 @@
 				201FF2991B23E9910069A660 /* SDWebImageDownloaderOperation.m in Sources */,
 				207361061B1C37690085168F /* YCDetailCommodityController.m in Sources */,
 				2051038D1B16C3CE0004C122 /* YCExpressTableViewCell.m in Sources */,
+				201FF3B71B28535B0069A660 /* UIViewController+LewPopupViewController.m in Sources */,
 				201FF2A11B23E9910069A660 /* UIImageView+WebCache.m in Sources */,
-				206A984F1B0EE16D00AC46E8 /* LewPopupBackgroundView.m in Sources */,
 				205CF63D1B0D7031001FB08E /* YCLayoutView.m in Sources */,
-				206A98511B0EE16D00AC46E8 /* UIViewController+LewPopupViewController.m in Sources */,
 				201FF2A01B23E9910069A660 /* UIImageView+HighlightedWebCache.m in Sources */,
 				209802A91B0B448B00C4BEAC /* RGCardViewLayout.m in Sources */,
 				209802861B0B445600C4BEAC /* AppDelegate.m in Sources */,
@@ -858,8 +858,8 @@
 				201FF29C1B23E9910069A660 /* UIButton+WebCache.m in Sources */,
 				205103851B1564BD0004C122 /* ExpressCompanyView.m in Sources */,
 				201FF2941B23E9910069A660 /* NSData+ImageContentType.m in Sources */,
-				206A98501B0EE16D00AC46E8 /* LewPopupViewAnimationDrop.m in Sources */,
 				205CF6441B0D8F1A001FB08E /* HYSegmentedControl.m in Sources */,
+				201FF3B61B28535B0069A660 /* LewPopupViewAnimationDrop.m in Sources */,
 				201FF2951B23E9910069A660 /* SDImageCache.m in Sources */,
 				209802B01B0B717900C4BEAC /* YCRootViewController.m in Sources */,
 				209802AD1B0B618000C4BEAC /* YCCollectionViewCell.m in Sources */,
@@ -970,6 +970,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haijun Li (W79W8G5YML)";
 				INFOPLIST_FILE = "易查/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -977,6 +978,7 @@
 					"$(PROJECT_DIR)/JuheApisSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fd578309-2fd5-490d-911b-f2bb0217f9e6";
 			};
 			name = Debug;
 		};
@@ -985,6 +987,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Haijun Li (W79W8G5YML)";
 				INFOPLIST_FILE = "易查/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -992,6 +995,7 @@
 					"$(PROJECT_DIR)/JuheApisSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fd578309-2fd5-490d-911b-f2bb0217f9e6";
 			};
 			name = Release;
 		};

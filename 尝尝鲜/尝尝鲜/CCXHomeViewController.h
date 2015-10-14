@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "CCXBaseViewController.h"
-#import "UIView+Additions.h"
 #import "AdvertisingColumn.h"
 #import "CCXPrefix.pch"
 #import "CCXUseJuhe.h"

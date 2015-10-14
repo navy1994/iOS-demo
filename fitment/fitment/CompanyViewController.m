@@ -27,25 +27,8 @@
 	self.company = [dbAccess getAllCompanys];
 	self.defArray = self.company;
 	NSLog(@"%d",self.isSave);
-//	if (self.isSave) {
-//		dbSaveCompany = [[SaveCompanyDB alloc]init];
-//		self.saveCompanys = [dbSaveCompany getAllData];
-//		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//		NSString *aString = [defaults stringForKey:@"userName"];
-//		for (int i =0; i < self.saveCompanys.count; i++) {
-//			self.saveCompany = [self.saveCompanys objectAtIndex:i];
-//			if ([self.saveCompany.userName isEqualToString:aString]) {
-//				for (int j =0; j < self.company.count; i++) {
-//					Company *aCompany = [self.company objectAtIndex:j];
-//					if ([self.saveCompany.company isEqualToString:aCompany.name]) {
-//						[self.saveResults addObject:aCompany];
-//					}
-//				}
-//			}
-//		}
-//	}
 
-	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 50)];
+	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
 	
 	//创建一个导航栏集合
 	UINavigationItem *navigationItem = [[UINavigationItem alloc] initWithTitle:nil];
@@ -71,7 +54,7 @@
 	[self.view addSubview:navBar];
 
 //aTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 104, 365, 600)];
-	aTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 60, ScreenWidth, ScreenHeight-60)];
+	aTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight-60)];
 	aTableView.delegate = self;
 	aTableView.dataSource = self;
 	[self.view addSubview:aTableView];

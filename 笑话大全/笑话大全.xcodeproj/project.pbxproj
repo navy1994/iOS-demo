@@ -681,6 +681,7 @@
 				201FF1C01B2296DB0069A660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		201FF1C11B2296DB0069A660 /* Build configuration list for PBXNativeTarget "笑话大全Tests" */ = {
 			isa = XCConfigurationList;
@@ -689,6 +690,7 @@
 				201FF1C31B2296DB0069A660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

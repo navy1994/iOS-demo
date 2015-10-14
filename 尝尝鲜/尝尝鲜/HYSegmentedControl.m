@@ -155,8 +155,7 @@
     }
 }
 
-
-#warning ////// index 从 0 开始
+#pragma mark -- index 从 0 开始
 // delegete method
 - (void)changeSegmentedControlWithIndex:(NSInteger)index
 {

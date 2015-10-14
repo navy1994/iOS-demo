@@ -19,10 +19,12 @@
 #define fDeviceWidth ([UIScreen mainScreen].bounds.size.width)
 #define fDeviceHeight ([UIScreen mainScreen].bounds.size.height-StatusBarHeight)
 
+@class MainViewController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate,WXApiDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) MainViewController *mainVC;
+@property (strong, nonatomic) UINavigationController *navigationController;
 
 
 @end

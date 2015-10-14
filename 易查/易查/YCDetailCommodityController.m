@@ -69,14 +69,11 @@
 
 #pragma mark --- UIWEbViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView{
-//	self.aLabel = [[UILabel alloc]initWithFrame:CGRectMake(fDeviceWidth/4, fDeviceHeight/2, fDeviceWidth/2, 30)];
-//	_aLabel.text = @"正在加载。。。";
-//	[self.view addSubview:_aLabel];
+
 	NSLog(@"webViewDidStartLoad");
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
-//	[self.aLabel removeFromSuperview];
 	NSLog(@"webViewDidFinishLoad");
 }
 

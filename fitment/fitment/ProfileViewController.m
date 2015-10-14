@@ -26,7 +26,7 @@
 }
 
 - (void)initWithUI{
-	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 50)];
+	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
 	
 	//创建一个导航栏集合
 	UINavigationItem *navigationItem = [[UINavigationItem alloc] initWithTitle:nil];
@@ -50,7 +50,7 @@
 	[self.view addSubview:navBar];
 	
 	
-	UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 70, [UIScreen mainScreen].bounds.size.width, 90)];
+	UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 90)];
 	view.backgroundColor = [UIColor groupTableViewBackgroundColor];
 	[self.view addSubview:view];
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -92,7 +92,7 @@
 	self.imageView.layer.masksToBounds = YES;
 	[view addSubview:self.imageView];
 	
-	aTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 160, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 160) style:UITableViewStyleGrouped];
+	aTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 150, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 160) style:UITableViewStyleGrouped];
 	aTableView.dataSource = self;
 	aTableView.delegate = self;
 	[self.view addSubview:aTableView];

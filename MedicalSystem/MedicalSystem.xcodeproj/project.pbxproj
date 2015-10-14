@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A3DDEB1B6B709C0064A780 /* yiliao.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A3DDEA1B6B709C0064A780 /* yiliao.png */; };
 		200A65D71AC04CE2007E8A56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A65D61AC04CE2007E8A56 /* main.m */; };
 		200A65DA1AC04CE2007E8A56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 200A65D91AC04CE2007E8A56 /* AppDelegate.m */; };
 		200A65E01AC04CE2007E8A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200A65DE1AC04CE2007E8A56 /* Main.storyboard */; };
@@ -44,7 +45,6 @@
 		2052455A1AC58B2100B3DB80 /* StateDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 205245591AC58B2100B3DB80 /* StateDB.m */; };
 		2052455D1AC5947300B3DB80 /* MedCostDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2052455C1AC5947300B3DB80 /* MedCostDB.m */; };
 		205245601AC5948B00B3DB80 /* PatientCostDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2052455F1AC5948B00B3DB80 /* PatientCostDB.m */; };
-		205CCC371AFC546600DD752B /* yiliao.png in Resources */ = {isa = PBXBuildFile; fileRef = 205CCC361AFC546600DD752B /* yiliao.png */; };
 		205DFD6B1AC4E7D600D40E1A /* TotalCostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205DFD6A1AC4E7D600D40E1A /* TotalCostViewController.m */; };
 		205DFD6E1AC5053400D40E1A /* PatientCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 205DFD6D1AC5053400D40E1A /* PatientCostModel.m */; };
 		205DFD711AC5054E00D40E1A /* MedCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 205DFD701AC5054E00D40E1A /* MedCostModel.m */; };
@@ -100,6 +100,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A3DDEA1B6B709C0064A780 /* yiliao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yiliao.png; path = UIImage/yiliao.png; sourceTree = "<group>"; };
 		200A65D11AC04CE2007E8A56 /* MedicalSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		200A65D51AC04CE2007E8A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		200A65D61AC04CE2007E8A56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -160,7 +161,6 @@
 		2052455C1AC5947300B3DB80 /* MedCostDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedCostDB.m; sourceTree = "<group>"; };
 		2052455E1AC5948B00B3DB80 /* PatientCostDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientCostDB.h; sourceTree = "<group>"; };
 		2052455F1AC5948B00B3DB80 /* PatientCostDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientCostDB.m; sourceTree = "<group>"; };
-		205CCC361AFC546600DD752B /* yiliao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yiliao.png; path = UIImage/yiliao.png; sourceTree = "<group>"; };
 		205DFD691AC4E7D600D40E1A /* TotalCostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalCostViewController.h; sourceTree = "<group>"; };
 		205DFD6A1AC4E7D600D40E1A /* TotalCostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalCostViewController.m; sourceTree = "<group>"; };
 		205DFD6C1AC5053400D40E1A /* PatientCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientCostModel.h; sourceTree = "<group>"; };
@@ -289,7 +289,6 @@
 			children = (
 				20C8970A1AC268D7001F65F5 /* db */,
 				20C896F71AC26868001F65F5 /* FMDatabase */,
-				208BFE251AC1042B008E72DC /* UIImage */,
 				200A65D51AC04CE2007E8A56 /* Info.plist */,
 				200A65D61AC04CE2007E8A56 /* main.m */,
 				2047EF6B1AC1455D005D91B3 /* MedicalPrefix.pch */,
@@ -498,7 +497,7 @@
 		2096C9211ACA6796007B8170 /* buttonImage */ = {
 			isa = PBXGroup;
 			children = (
-				205CCC361AFC546600DD752B /* yiliao.png */,
+				04A3DDEA1B6B709C0064A780 /* yiliao.png */,
 				205E81271ACCDF4400F8C24C /* weidenglu.png */,
 				20642B261ACBDB4600A8C651 /* logo1.png */,
 				2096C9221ACA67C7007B8170 /* delete.png */,
@@ -511,6 +510,7 @@
 		20A93CEB1AC969EF0096E9F5 /* DBModel */ = {
 			isa = PBXGroup;
 			children = (
+				208BFE251AC1042B008E72DC /* UIImage */,
 			);
 			name = DBModel;
 			sourceTree = "<group>";
@@ -674,7 +674,7 @@
 				2048386F1AC6AE8F0081F735 /* bg2.png in Resources */,
 				2047EF781AC19DFB005D91B3 /* MedicalSystem.sqlite in Resources */,
 				208BFE371AC1044C008E72DC /* tabbar_home.png in Resources */,
-				205CCC371AFC546600DD752B /* yiliao.png in Resources */,
+				04A3DDEB1B6B709C0064A780 /* yiliao.png in Resources */,
 				208BFE391AC1044C008E72DC /* tabbar_message_center.png in Resources */,
 				208BFE361AC1044C008E72DC /* tabbar_home_highlighted.png in Resources */,
 				20665DC41AC2563100395686 /* radio_checked@2x.png in Resources */,
@@ -857,9 +857,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai kewenmaigeli industrial co., LTD";
 				INFOPLIST_FILE = MedicalSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d4ea9850-a7df-453b-99f1-a6d6145cb984";
 			};
 			name = Debug;
 		};
@@ -867,9 +869,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shanghai kewenmaigeli industrial co., LTD";
 				INFOPLIST_FILE = MedicalSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d4ea9850-a7df-453b-99f1-a6d6145cb984";
 			};
 			name = Release;
 		};

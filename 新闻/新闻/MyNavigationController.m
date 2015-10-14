@@ -10,4 +10,13 @@
 
 @implementation MyNavigationController
 
+
+- (id)init{
+    self = [super init];
+    if (self) {
+        [self.navigationBar setBarTintColor:[UIColor colorWithRed:192.0f/255.0f green:37.0f/255.0f blue:62.0f/255.0f alpha:1.0f]];
+        [self.navigationBar setTintColor:[UIColor blackColor]];
+    }
+    return self;
+}
 @end

@@ -11,6 +11,7 @@
 #import "ImageViewController.h"
 #import "NavigationBar.h"
 #import <ShareSDK/ShareSDK.h>
+#import "FitmentPrefix.pch"
 
 @interface DetailViewController ()
 
@@ -20,18 +21,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.backgroundView = [[UIView alloc]initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height - 20)];
-	self.backgroundView.backgroundColor = [UIColor blackColor];
-	[self.view addSubview:self.backgroundView];
+    self.view.backgroundColor = [UIColor blackColor];
 	
 	float ret = self.image.size.height / self.image.size.width;
 	self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, (self.view.bounds.size.height - self.view.bounds.size.width * ret)/2, self.view.bounds.size.width, self.view.bounds.size.width * ret)];
-	NSLog(@"%f",self.view.bounds.size.height);
 	self.imageView.image = self.image;
 	
-	[self.backgroundView addSubview:self.imageView];
+	[self.view addSubview:self.imageView];
 	
-	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 40)];
+	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
 	
 	//创建一个导航栏集合
 	UINavigationItem *navigationItem = [[UINavigationItem alloc] initWithTitle:nil];
@@ -59,25 +57,19 @@
 	[navigationItem setLeftBarButtonItem:leftButton];
 	
 	//把导航栏添加到视图中
-	[self.backgroundView addSubview:navBar];
+	[self.view addSubview:navBar];
 
-	self.aToolBar = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.bounds.size.height - 75, self.view.bounds.size.width, 50)];
-	self.aToolBar.backgroundColor = [UIColor blackColor];
-	[self.backgroundView addSubview:self.aToolBar];
-	
 	UIButton *collectButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	//[collectButton setImage:[UIImage imageNamed:@"soucang.png"] forState:UIControlStateNormal];
-	[collectButton setTitle:@"收藏" forState:UIControlStateNormal];
-	collectButton.frame = CGRectMake(self.view.bounds.size.width/2-100, 0, 50, 50);
+	[collectButton setImage:[UIImage imageNamed:@"soucang"]  forState:UIControlStateNormal];
+	collectButton.frame = CGRectMake(self.view.bounds.size.width/2-100, ScreenHeight-55, 50, 50);
 	[collectButton addTarget:self action:@selector(clickCollectImage) forControlEvents:UIControlEventTouchUpInside];
-	[self.aToolBar addSubview:collectButton];
+	[self.view addSubview:collectButton];
 	
 	UIButton *shareButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//	[shareButton setImage:[UIImage imageNamed:@"fenxiang.png"] forState:UIControlStateNormal];
-	[shareButton setTitle:@"分享" forState:UIControlStateNormal];
-	shareButton.frame = CGRectMake(240, 0, 50, 50);
+	[shareButton setImage:[UIImage imageNamed:@"fenxiang"]  forState:UIControlStateNormal];
+	shareButton.frame = CGRectMake(240, ScreenHeight-55, 50, 50);
 	[shareButton addTarget:self action:@selector(clickShareImage:) forControlEvents:UIControlEventTouchUpInside];
-	[self.aToolBar addSubview:shareButton];	
+	[self.view addSubview:shareButton];
 	
 }
 

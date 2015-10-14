@@ -1,0 +1,17 @@
+//
+//  PhysicalPrefix.pch
+//  physical
+//
+//  Created by mac- t4 on 15/7/2.
+//  Copyright (c) 2015年 mac- t4. All rights reserved.
+//
+
+#ifndef physical_PhysicalPrefix_pch
+#define physical_PhysicalPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define fDeviceWidth ([UIScreen mainScreen].bounds.size.width)
+#define fDeviceHeight ([UIScreen mainScreen].bounds.size.height)
+
+#endif

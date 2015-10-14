@@ -19,13 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
+    self.view.backgroundColor = [UIColor blackColor];
 	DBAccess *dbAccess = [[DBAccess alloc]init];
 	self.image = [dbAccess getAllProducts];
 	
 	[dbAccess closeDatabase];
 	
-	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 50)];
+	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
 	
 	//创建一个导航栏集合
 	UINavigationItem *navigationItem = [[UINavigationItem alloc] initWithTitle:nil];
@@ -41,7 +41,7 @@
 
 	UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
 	[flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-	self.collectionView =[[UICollectionView alloc]initWithFrame:CGRectMake(0, 65, fDeviceWidth, fDeviceHeight) collectionViewLayout:flowLayout];
+	self.collectionView =[[UICollectionView alloc]initWithFrame:CGRectMake(0, 69, fDeviceWidth, fDeviceHeight) collectionViewLayout:flowLayout];
 	
 	self.collectionView.delegate = self;
 	self.collectionView.dataSource = self;

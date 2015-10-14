@@ -65,21 +65,21 @@
 		_seachBar.backgroundColor = [UIColor colorWithRed:192.0f/255.0f green:37.0f/255.0f blue:62.0f/255.0f alpha:1.0f];
 		//_seachBar.backgroundColor = [UIColor clearColor];
 		_seachBar.barTintColor = [UIColor colorWithRed:192.0f/255.0f green:37.0f/255.0f blue:62.0f/255.0f alpha:1.0f];
-		_seachBar.showsCancelButton = YES;
+		//_seachBar.showsCancelButton = YES;
 		[navigationBack addSubview:_seachBar];
-		UIButton *cancelButton;
-		UIView *topView = _seachBar.subviews[0];
-		for (UIView *subView in topView.subviews) {
-			if ([subView isKindOfClass:NSClassFromString(@"UINavigationButton")]) {
-				cancelButton = (UIButton*)subView;
-			}
-		}
-		if (cancelButton) {
-			//Set the new title of the cancel button
-			[cancelButton setTitle:@"确定" forState:UIControlStateNormal];
-			[cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-			cancelButton.titleLabel.font = [UIFont fontWithName:@"Heiti SC" size:15];
-		}
+//		UIButton *cancelButton;
+//		UIView *topView = _seachBar.subviews[0];
+//		for (UIView *subView in topView.subviews) {
+//			if ([subView isKindOfClass:NSClassFromString(@"UINavigationButton")]) {
+//				cancelButton = (UIButton*)subView;
+//			}
+//		}
+//		if (cancelButton) {
+//			//Set the new title of the cancel button
+//			[cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+//			[cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//			cancelButton.titleLabel.font = [UIFont fontWithName:@"Heiti SC" size:15];
+//		}
 
 		
 	}

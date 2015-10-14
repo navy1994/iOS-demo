@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0435884A1B451305001210C5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435883F1B451305001210C5 /* FMDatabase.m */; };
+		0435884B1B451305001210C5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 043588411B451305001210C5 /* FMDatabaseAdditions.m */; };
+		0435884C1B451305001210C5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 043588431B451305001210C5 /* FMDatabasePool.m */; };
+		0435884D1B451305001210C5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 043588451B451305001210C5 /* FMDatabaseQueue.m */; };
+		0435884E1B451305001210C5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 043588471B451305001210C5 /* FMResultSet.m */; };
+		043588561B4513D1001210C5 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 043588551B4513D1001210C5 /* Quiz.m */; };
+		043588591B451585001210C5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 043588581B451585001210C5 /* libsqlite3.dylib */; };
+		0435885D1B452805001210C5 /* QuizDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435885C1B452805001210C5 /* QuizDB.m */; };
+		0435885F1B4528D2001210C5 /* PhysicalQuiz.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0435885E1B4528D2001210C5 /* PhysicalQuiz.sqlite */; };
+		047FC3E91B44CABB002A635E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047FC3E81B44CABB002A635E /* main.m */; };
+		047FC3EC1B44CABB002A635E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047FC3EB1B44CABB002A635E /* AppDelegate.m */; };
+		047FC3F21B44CABB002A635E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047FC3F01B44CABB002A635E /* Main.storyboard */; };
+		047FC3F41B44CABB002A635E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047FC3F31B44CABB002A635E /* Images.xcassets */; };
+		047FC3F71B44CABB002A635E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047FC3F51B44CABB002A635E /* LaunchScreen.xib */; };
+		047FC4031B44CABB002A635E /* physicalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047FC4021B44CABB002A635E /* physicalTests.m */; };
+		047FC40F1B44CC3F002A635E /* PhysicalTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047FC40E1B44CC3F002A635E /* PhysicalTestViewController.m */; };
+		047FC4131B44CE64002A635E /* PhysicalNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047FC4121B44CE64002A635E /* PhysicalNavigationView.m */; };
+		047FC4171B44ED4F002A635E /* PhysicalTestHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047FC4161B44ED4F002A635E /* PhysicalTestHomeView.m */; };
+		047FC41A1B44F37E002A635E /* PhysicalQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047FC4191B44F37E002A635E /* PhysicalQuizViewController.m */; };
+		047FC41D1B44F3DD002A635E /* QuizTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047FC41C1B44F3DD002A635E /* QuizTableViewCell.m */; };
+		04C9CAA81B46155C00323155 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9CAA71B46155C00323155 /* ResultViewController.m */; };
+		04C9CAC01B467E0900323155 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C9CABF1B467E0900323155 /* DLRadioButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		047FC3FD1B44CABB002A635E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 047FC3DB1B44CABB002A635E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047FC3E21B44CABB002A635E;
+			remoteInfo = physical;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0435883E1B451305001210C5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		0435883F1B451305001210C5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		043588401B451305001210C5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		043588411B451305001210C5 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		043588421B451305001210C5 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		043588431B451305001210C5 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		043588441B451305001210C5 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		043588451B451305001210C5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		043588461B451305001210C5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		043588471B451305001210C5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		043588541B4513D1001210C5 /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
+		043588551B4513D1001210C5 /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
+		043588581B451585001210C5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0435885B1B452805001210C5 /* QuizDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizDB.h; sourceTree = "<group>"; };
+		0435885C1B452805001210C5 /* QuizDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizDB.m; sourceTree = "<group>"; };
+		0435885E1B4528D2001210C5 /* PhysicalQuiz.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = PhysicalQuiz.sqlite; sourceTree = "<group>"; };
+		047FC3E31B44CABB002A635E /* physical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = physical.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047FC3E71B44CABB002A635E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047FC3E81B44CABB002A635E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		047FC3EA1B44CABB002A635E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		047FC3EB1B44CABB002A635E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		047FC3F11B44CABB002A635E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		047FC3F31B44CABB002A635E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		047FC3F61B44CABB002A635E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		047FC3FC1B44CABB002A635E /* physicalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = physicalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		047FC4011B44CABB002A635E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047FC4021B44CABB002A635E /* physicalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = physicalTests.m; sourceTree = "<group>"; };
+		047FC40D1B44CC3F002A635E /* PhysicalTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicalTestViewController.h; sourceTree = "<group>"; };
+		047FC40E1B44CC3F002A635E /* PhysicalTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicalTestViewController.m; sourceTree = "<group>"; };
+		047FC4111B44CE64002A635E /* PhysicalNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicalNavigationView.h; sourceTree = "<group>"; };
+		047FC4121B44CE64002A635E /* PhysicalNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicalNavigationView.m; sourceTree = "<group>"; };
+		047FC4141B44D0CA002A635E /* PhysicalPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicalPrefix.pch; sourceTree = "<group>"; };
+		047FC4151B44ED4F002A635E /* PhysicalTestHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicalTestHomeView.h; sourceTree = "<group>"; };
+		047FC4161B44ED4F002A635E /* PhysicalTestHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicalTestHomeView.m; sourceTree = "<group>"; };
+		047FC4181B44F37E002A635E /* PhysicalQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicalQuizViewController.h; sourceTree = "<group>"; };
+		047FC4191B44F37E002A635E /* PhysicalQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysicalQuizViewController.m; sourceTree = "<group>"; };
+		047FC41B1B44F3DD002A635E /* QuizTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizTableViewCell.h; sourceTree = "<group>"; };
+		047FC41C1B44F3DD002A635E /* QuizTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizTableViewCell.m; sourceTree = "<group>"; };
+		04C9CAA61B46155C00323155 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		04C9CAA71B46155C00323155 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		04C9CABE1B467E0900323155 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		04C9CABF1B467E0900323155 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047FC3E01B44CABB002A635E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043588591B451585001210C5 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047FC3F91B44CABB002A635E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0435883D1B451305001210C5 /* FMDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				0435883E1B451305001210C5 /* FMDatabase.h */,
+				0435883F1B451305001210C5 /* FMDatabase.m */,
+				043588401B451305001210C5 /* FMDatabaseAdditions.h */,
+				043588411B451305001210C5 /* FMDatabaseAdditions.m */,
+				043588421B451305001210C5 /* FMDatabasePool.h */,
+				043588431B451305001210C5 /* FMDatabasePool.m */,
+				043588441B451305001210C5 /* FMDatabaseQueue.h */,
+				043588451B451305001210C5 /* FMDatabaseQueue.m */,
+				043588461B451305001210C5 /* FMResultSet.h */,
+				043588471B451305001210C5 /* FMResultSet.m */,
+			);
+			path = FMDatabase;
+			sourceTree = "<group>";
+		};
+		043588501B451342001210C5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0435885B1B452805001210C5 /* QuizDB.h */,
+				0435885C1B452805001210C5 /* QuizDB.m */,
+				043588541B4513D1001210C5 /* Quiz.h */,
+				043588551B4513D1001210C5 /* Quiz.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		043588571B451569001210C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				043588581B451585001210C5 /* libsqlite3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		047FC3DA1B44CABB002A635E = {
+			isa = PBXGroup;
+			children = (
+				043588571B451569001210C5 /* Frameworks */,
+				0435883D1B451305001210C5 /* FMDatabase */,
+				04C9CABD1B467E0900323155 /* DLRadioButton */,
+				047FC3E51B44CABB002A635E /* physical */,
+				047FC3FF1B44CABB002A635E /* physicalTests */,
+				047FC3E41B44CABB002A635E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		047FC3E41B44CABB002A635E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047FC3E31B44CABB002A635E /* physical.app */,
+				047FC3FC1B44CABB002A635E /* physicalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		047FC3E51B44CABB002A635E /* physical */ = {
+			isa = PBXGroup;
+			children = (
+				047FC40C1B44CBD5002A635E /* 体质测试 */,
+				047FC4101B44CDE0002A635E /* view */,
+				043588501B451342001210C5 /* model */,
+				047FC3EA1B44CABB002A635E /* AppDelegate.h */,
+				047FC3EB1B44CABB002A635E /* AppDelegate.m */,
+				047FC3F01B44CABB002A635E /* Main.storyboard */,
+				047FC3F31B44CABB002A635E /* Images.xcassets */,
+				047FC3F51B44CABB002A635E /* LaunchScreen.xib */,
+				047FC3E61B44CABB002A635E /* Supporting Files */,
+			);
+			path = physical;
+			sourceTree = "<group>";
+		};
+		047FC3E61B44CABB002A635E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0435885E1B4528D2001210C5 /* PhysicalQuiz.sqlite */,
+				047FC3E71B44CABB002A635E /* Info.plist */,
+				047FC3E81B44CABB002A635E /* main.m */,
+				047FC4141B44D0CA002A635E /* PhysicalPrefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		047FC3FF1B44CABB002A635E /* physicalTests */ = {
+			isa = PBXGroup;
+			children = (
+				047FC4021B44CABB002A635E /* physicalTests.m */,
+				047FC4001B44CABB002A635E /* Supporting Files */,
+			);
+			path = physicalTests;
+			sourceTree = "<group>";
+		};
+		047FC4001B44CABB002A635E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				047FC4011B44CABB002A635E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		047FC40C1B44CBD5002A635E /* 体质测试 */ = {
+			isa = PBXGroup;
+			children = (
+				047FC40D1B44CC3F002A635E /* PhysicalTestViewController.h */,
+				047FC40E1B44CC3F002A635E /* PhysicalTestViewController.m */,
+				047FC4181B44F37E002A635E /* PhysicalQuizViewController.h */,
+				047FC4191B44F37E002A635E /* PhysicalQuizViewController.m */,
+				04C9CAA61B46155C00323155 /* ResultViewController.h */,
+				04C9CAA71B46155C00323155 /* ResultViewController.m */,
+				047FC41B1B44F3DD002A635E /* QuizTableViewCell.h */,
+				047FC41C1B44F3DD002A635E /* QuizTableViewCell.m */,
+			);
+			name = "体质测试";
+			sourceTree = "<group>";
+		};
+		047FC4101B44CDE0002A635E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				047FC4111B44CE64002A635E /* PhysicalNavigationView.h */,
+				047FC4121B44CE64002A635E /* PhysicalNavigationView.m */,
+				047FC4151B44ED4F002A635E /* PhysicalTestHomeView.h */,
+				047FC4161B44ED4F002A635E /* PhysicalTestHomeView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		04C9CABD1B467E0900323155 /* DLRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				04C9CABE1B467E0900323155 /* DLRadioButton.h */,
+				04C9CABF1B467E0900323155 /* DLRadioButton.m */,
+			);
+			path = DLRadioButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		047FC3E21B44CABB002A635E /* physical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047FC4061B44CABB002A635E /* Build configuration list for PBXNativeTarget "physical" */;
+			buildPhases = (
+				047FC3DF1B44CABB002A635E /* Sources */,
+				047FC3E01B44CABB002A635E /* Frameworks */,
+				047FC3E11B44CABB002A635E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = physical;
+			productName = physical;
+			productReference = 047FC3E31B44CABB002A635E /* physical.app */;
+			productType = "com.apple.product-type.application";
+		};
+		047FC3FB1B44CABB002A635E /* physicalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047FC4091B44CABB002A635E /* Build configuration list for PBXNativeTarget "physicalTests" */;
+			buildPhases = (
+				047FC3F81B44CABB002A635E /* Sources */,
+				047FC3F91B44CABB002A635E /* Frameworks */,
+				047FC3FA1B44CABB002A635E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047FC3FE1B44CABB002A635E /* PBXTargetDependency */,
+			);
+			name = physicalTests;
+			productName = physicalTests;
+			productReference = 047FC3FC1B44CABB002A635E /* physicalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		047FC3DB1B44CABB002A635E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "mac- t4";
+				TargetAttributes = {
+					047FC3E21B44CABB002A635E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					047FC3FB1B44CABB002A635E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 047FC3E21B44CABB002A635E;
+					};
+				};
+			};
+			buildConfigurationList = 047FC3DE1B44CABB002A635E /* Build configuration list for PBXProject "physical" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 047FC3DA1B44CABB002A635E;
+			productRefGroup = 047FC3E41B44CABB002A635E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				047FC3E21B44CABB002A635E /* physical */,
+				047FC3FB1B44CABB002A635E /* physicalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047FC3E11B44CABB002A635E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047FC3F21B44CABB002A635E /* Main.storyboard in Resources */,
+				0435885F1B4528D2001210C5 /* PhysicalQuiz.sqlite in Resources */,
+				047FC3F71B44CABB002A635E /* LaunchScreen.xib in Resources */,
+				047FC3F41B44CABB002A635E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047FC3FA1B44CABB002A635E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		047FC3DF1B44CABB002A635E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047FC40F1B44CC3F002A635E /* PhysicalTestViewController.m in Sources */,
+				047FC4171B44ED4F002A635E /* PhysicalTestHomeView.m in Sources */,
+				047FC41A1B44F37E002A635E /* PhysicalQuizViewController.m in Sources */,
+				047FC3EC1B44CABB002A635E /* AppDelegate.m in Sources */,
+				0435885D1B452805001210C5 /* QuizDB.m in Sources */,
+				04C9CAC01B467E0900323155 /* DLRadioButton.m in Sources */,
+				047FC41D1B44F3DD002A635E /* QuizTableViewCell.m in Sources */,
+				0435884B1B451305001210C5 /* FMDatabaseAdditions.m in Sources */,
+				0435884E1B451305001210C5 /* FMResultSet.m in Sources */,
+				04C9CAA81B46155C00323155 /* ResultViewController.m in Sources */,
+				047FC3E91B44CABB002A635E /* main.m in Sources */,
+				043588561B4513D1001210C5 /* Quiz.m in Sources */,
+				0435884C1B451305001210C5 /* FMDatabasePool.m in Sources */,
+				0435884D1B451305001210C5 /* FMDatabaseQueue.m in Sources */,
+				047FC4131B44CE64002A635E /* PhysicalNavigationView.m in Sources */,
+				0435884A1B451305001210C5 /* FMDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047FC3F81B44CABB002A635E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047FC4031B44CABB002A635E /* physicalTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		047FC3FE1B44CABB002A635E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047FC3E21B44CABB002A635E /* physical */;
+			targetProxy = 047FC3FD1B44CABB002A635E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		047FC3F01B44CABB002A635E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047FC3F11B44CABB002A635E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		047FC3F51B44CABB002A635E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047FC3F61B44CABB002A635E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		047FC4041B44CABB002A635E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		047FC4051B44CABB002A635E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		047FC4071B44CABB002A635E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = physical/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		047FC4081B44CABB002A635E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = physical/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		047FC40A1B44CABB002A635E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = physicalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/physical.app/physical";
+			};
+			name = Debug;
+		};
+		047FC40B1B44CABB002A635E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = physicalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/physical.app/physical";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		047FC3DE1B44CABB002A635E /* Build configuration list for PBXProject "physical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047FC4041B44CABB002A635E /* Debug */,
+				047FC4051B44CABB002A635E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047FC4061B44CABB002A635E /* Build configuration list for PBXNativeTarget "physical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047FC4071B44CABB002A635E /* Debug */,
+				047FC4081B44CABB002A635E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047FC4091B44CABB002A635E /* Build configuration list for PBXNativeTarget "physicalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047FC40A1B44CABB002A635E /* Debug */,
+				047FC40B1B44CABB002A635E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 047FC3DB1B44CABB002A635E /* Project object */;
+}

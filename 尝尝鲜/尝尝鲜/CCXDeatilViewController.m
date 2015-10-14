@@ -115,6 +115,7 @@
 	}
 }
 
+
 - (MenuTableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 //	static NSString *Indetifier = @"cell";
 //	MenuTableViewCell *cell = (MenuTableViewCell*)[tableView dequeueReusableCellWithIdentifier:Indetifier];
@@ -137,9 +138,10 @@
 }
 
 - (void)initCell:(MenuTableViewCell*)cell cellAtIndexPath:(NSIndexPath *)indexPath{
-			cell.tags.frame = CGRectMake(10, 10, fDeviceWidth-20, 30);
+			cell.tags.frame = CGRectMake(10, 10, fDeviceWidth-20, 50);
+	        cell.tags.numberOfLines = 3;
 			cell.tags.text = [NSString stringWithFormat:@"%@",[[[_detailDic objectForKey:@"steps"]objectAtIndex:indexPath.row]objectForKey:@"step"]];
-			cell.imageView.frame = CGRectMake(20, 45, 130, 95);
+			cell.imageView.frame = CGRectMake(20, 65, 130, 95);
 	[cell.imageView sd_setImageWithURL:[NSURL URLWithString:[[[[_detailDic objectForKey:@"steps"]objectAtIndex:indexPath.row]objectForKey:@"img"]stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]
 	   placeholderImage:[UIImage imageNamed:@"placeholder"] options:indexPath.row == 0 ? SDWebImageRefreshCached : 0];
 }

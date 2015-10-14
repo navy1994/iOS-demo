@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 50)];
+	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
 	
 	//创建一个导航栏集合
 	UINavigationItem *navigationItem = [[UINavigationItem alloc] initWithTitle:nil];
@@ -51,6 +51,7 @@
 	addressLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 330, 300, 30)];
 	addressLabel.font = [UIFont boldSystemFontOfSize:15];
 	addressLabel.text = self.aCompany.address;
+    addressLabel.numberOfLines = 0;
 	[self.view addSubview:addressLabel];
 	
 	koubeiImgView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 270, 20, 20)];

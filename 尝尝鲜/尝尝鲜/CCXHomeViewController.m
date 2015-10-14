@@ -24,13 +24,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	NSString *system = [UIDevice currentDevice].systemVersion;
+	float number = [system floatValue];
 	
+	CGFloat height = 0.0f;
+	CGFloat TAG;
+	NSInteger type = 0;
+	if (number <= 6.9) {
+		type = 0;
+		height = 44.0f;
+		TAG = 44.0f/66.0f;
+	}else{
+		type = 1;
+		height = 66.0f;
+		TAG = 1;
+	}
 	_useJuhe = [CCXUseJuhe shareUseJuhe];
 	[self useJuheGetJSON];
 	[self.navigationController setNavigationBarHidden:YES animated:NO];
     self.navigation.title = @"尝尝鲜";
 	
-	self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0.0f, self.navigation.size.height+self.navigation.origin.y, self.view.size.width, 60.0f)];
+	self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0.0f, self.navigation.frame.size.height+self.navigation.frame.origin.y, self.view.frame.size.width, 40.0f*TAG)];
 	_searchBar.delegate = self;
 	_searchBar.placeholder = @"搜索菜谱";
 	_searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
@@ -46,7 +60,7 @@
 	[searchButton addTarget:self action:@selector(clickButtonToSearch) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:searchButton];
 	
-	float AD_height = 160.0f;
+	float AD_height = (fDeviceWidth-20)/2+50;
 	UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc] init];
 	[flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
 	//flowLayout.headerReferenceSize = CGSizeMake(fDeviceWidth, AD_height+60);//头部
@@ -62,7 +76,7 @@
 	/*
 	 ***广告栏
 	 */
-	_headerView = [[AdvertisingColumn alloc]initWithFrame:CGRectMake(0, 5, fDeviceWidth, AD_height+60)];
+	_headerView = [[AdvertisingColumn alloc]initWithFrame:CGRectMake(0, 5, fDeviceWidth, AD_height)];
 	
 	/*
 	 ***加载的数据
@@ -115,7 +129,6 @@
 				[self initAdvertisingColumn:result];
 			}
 		}];
-	
 }
 
 - (void)initAdvertisingColumn:(id)resultData{
@@ -127,7 +140,7 @@
 		[_imgArray addObject:image];
 	}
 	[_headerView setArray:_imgArray];
-
+	[_collectionView reloadData];
 }
 
 - (void)clickButtonToSearch{
@@ -220,7 +233,6 @@
 			}
 			break;
 	   case 2:{
-		   NSLog(@"row=%ld",indexPath.row);
 		   cell.backgroundColor = [UIColor whiteColor];
 		   UIImageView *imgeView = [[UIImageView alloc]initWithFrame:CGRectMake(5, 5, fDeviceWidth-10, (fDeviceWidth-20)/2+40)];
 		   [imgeView sd_setImageWithURL:[NSURL URLWithString:[[[[_data objectAtIndex:indexPath.row]objectForKey:@"albums"]objectAtIndex:0] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]
@@ -287,7 +299,9 @@
 					}
 				}];
 			}else{
-				[self presentController:nil didSelectItemAtIndexPath:indexPath];
+				
+			   [self presentController:nil didSelectItemAtIndexPath:indexPath];
+			
 			}
 			break;
 	   case 2:

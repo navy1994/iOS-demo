@@ -23,7 +23,7 @@
 	
 	dbProfile = [[ProfileDB alloc]init];
 	
-	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 50)];
+	NavigationBar *navBar = [[NavigationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
 	
 	//创建一个导航栏集合
 	UINavigationItem *navigationItem = [[UINavigationItem alloc] initWithTitle:nil];
@@ -96,18 +96,9 @@
 	registerButton.frame = CGRectMake(50, ScreenHeight-130, [UIScreen mainScreen].bounds.size.width - 100, 50);
 	[registerButton setTitle:@"登录" forState:UIControlStateNormal];
 	[registerButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-	registerButton.backgroundColor = [UIColor groupTableViewBackgroundColor];
+	registerButton.backgroundColor = [UIColor colorWithRed:27.0f/255.0f green:103.0f/255.0f blue:162.0f/255.0f alpha:1.0f];
 	[registerButton addTarget:self action:@selector(clickLoginButton) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:registerButton];
-	
-//	self.forgetButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//	self.forgetButton.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 120, 525, 100, 20);
-//	[self.forgetButton setTitle:@"忘记密码？" forState:UIControlStateNormal];
-//	self.forgetButton.backgroundColor = [UIColor clearColor];
-//	[self.forgetButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//	self.forgetButton.titleLabel.font = [UIFont boldSystemFontOfSize:10];
-//	[self.forgetButton addTarget:self action:@selector(clickForgetButton:) forControlEvents:UIControlEventTouchUpInside];
-//	[self.view addSubview:self.forgetButton];
 
 }
 
